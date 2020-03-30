@@ -1,0 +1,19 @@
+.button-primary {
+	background: linear-gradient(65deg, get-color(primary, 1) 0, get-color(primary, 3) 100%);
+	background-origin: border-box;
+
+    &:hover {
+		background: linear-gradient(65deg, lighten(get-color(primary, 1), 1%) 0, lighten(get-color(primary, 3), 1%) 100%);
+		background-origin: border-box;
+	}
+}
+
+.button-secondary {
+	background: linear-gradient(65deg, get-color(secondary, 2) 0, get-color(secondary, 1) 100%);
+	background-origin: border-box;
+
+    &:hover {
+		background: linear-gradient(65deg, lighten(get-color(secondary, 2), 1%) 0, lighten(get-color(secondary, 1), 1%) 100%);
+		background-origin: border-box;
+	}
+}

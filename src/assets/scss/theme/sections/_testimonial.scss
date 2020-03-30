@@ -1,0 +1,74 @@
+.testimonial {
+
+	.tiles-item {
+		position: relative;
+
+		&:first-child {
+			
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: -18px;
+				left: -10px;
+				width: 89px;
+				height: 82px;
+				background-image: inline-svg('<svg width="89" height="82" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="' + get-color(tertiary, 1) + '" d="M84.253 0L60.429 21.971 48.362 51.337 64.066 81.16l19.433-19.358-18.414-25.956L88.424 3.729z"/><path fill="' + get-color(tertiary, 2) + '" d="M12.116 21.959L0 51.337l15.758 29.829 19.374-19.363-18.439-25.957L40.196 3.741 36.006.01z"/></g></svg>');
+			}
+		}
+	}
+
+	.tiles-item-inner {
+		background: get-color(light, 1);
+	}
+}
+
+.testimonial-item-image {
+	position: relative;
+	margin-top: 16px;
+
+	img {
+		border-radius: 50%;
+		box-shadow: 0 12px 24px rgba(get-color(dark, 1), .32);
+	}
+}
+
+.testimonial-item-name {
+	color: get-color(dark, 1);
+}
+
+.testimonial-item-link {
+
+	a:not(.button) {
+		color: get-color(secondary, 1);
+		text-decoration: none;
+	}
+}
+
+@include media( '>1145px' ) { // 1145px may need to e adjusted if testimonial items width or outer padding change
+	.testimonial {
+
+		.tiles-wrap {
+			padding-bottom: 152px;
+		}
+
+		.tiles-item {
+
+			&:first-child {
+				
+				&::before {
+					top: -136px;
+					left: calc(50% - 44px);
+				}
+			}			
+
+			&:nth-child(3n+1) {
+				top: 152px;
+			}
+
+			&:nth-child(3n+3) {
+				top: 64px;
+			}
+		}
+	}
+}

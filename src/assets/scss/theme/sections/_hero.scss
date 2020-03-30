@@ -1,0 +1,56 @@
+.hero {
+
+    .split-item {
+		margin-bottom: 16px;
+	}
+
+    .split-item-image {
+
+        .has-shadow {        
+            box-shadow: 0 32px 88px rgba(get-color(dark, 1), .32);
+        }
+    }
+}
+
+@include media( '<=medium' ) {
+
+	.hero {
+
+		.split-wrap {
+
+			.split-item {
+
+				.split-item-content {
+					margin-bottom: 80px;
+				}
+			}
+
+			&.invert-mobile {
+
+				.split-item {
+
+					.split-item-image {
+						margin-bottom: 80px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media( '>medium' ) {
+
+    .hero {
+
+        .split-item {
+			margin-bottom: 48px;
+		}
+
+        .split-wrap {
+
+            .split-item {
+                align-items: initial;
+            }
+        }
+    }
+}

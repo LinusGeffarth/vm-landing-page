@@ -1,0 +1,67 @@
+// Links
+
+// Color
+$link--color: (
+	link: 								get-color(dark, 2),
+	link-hover: 						get-color(dark, 1),
+	header-link: 						rgba(get-color(dark, 1), .7),
+	header-link-hover: 					null,
+	header-link-mobile: 				null,
+	header-link-mobile-hover: 			null,
+	footer-link: 						null,
+	footer-link-hover: 					null,
+	footer-block-link: 					null,
+	footer-block-link-hover: 			null,
+	button-link: 						null,
+	button-link-hover: 					null,
+	func-link: 							get-color(primary, 1),
+	func-link-hover: 					get-color(primary, 3),	
+	// ↓ Inverted colors
+	link-inverse: 						get-color(dark, 3),
+	link-hover-inverse: 				get-color(light, 3),
+	header-link-inverse: 				get-color(light, 1),
+	header-link-hover-inverse:			null,
+	footer-link-inverse: 				null,
+	footer-link-hover-inverse: 			null,
+	footer-block-link-inverse: 			null,
+	footer-block-link-hover-inverse:	null,
+	button-link-inverse: 				null,
+	button-link-hover-inverse:			null,
+	func-link-inverse: 					get-color(dark, 3),
+	func-link-hover-inverse:			get-color(light, 3)	
+);
+
+// Font-weight
+$link--weight: (
+	link: 				null,
+	header-link:		500,
+	footer-link:		null,
+	footer-block-link:	null,
+	button-link:		null,
+	func-link:			null
+);
+
+// Text decoration
+$link-main--decoration: 				underline;
+$link-main--decoration-hover: 			null;
+$link-header--decoration: 				none;
+$link-header--decoration-hover:			underline;
+$link-footer--decoration: 				none;
+$link-footer--decoration-hover: 		null;
+$link-footer-block--decoration: 		none;
+$link-footer-block--decoration-hover:	null;
+$link-button--decoration: 				none;
+$link-button--decoration-hover: 		underline;
+$link-func--decoration: 				null;
+$link-func--decoration-hover: 			null;
+
+// Text transform
+$link-header--transform: 		uppercase;
+$link-footer--transform: 		null;
+$link-footer-block--transform: 	null;
+$link-button--transform: 		null;
+$link-func--transform: 			null;
+
+// Don't change lines below!
+$color:			map-push($color, $link--color);
+$font--weight: 	map-push($font--weight, $link--weight);

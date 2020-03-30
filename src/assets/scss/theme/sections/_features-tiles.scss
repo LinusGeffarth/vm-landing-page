@@ -1,0 +1,26 @@
+.features-tiles-item-image {
+	display: inline-flex;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border-radius: 50%;
+
+	&.primary-color {
+        background-color: get-color(primary, 1);
+        background: linear-gradient(45deg, get-color(primary, 1) 20%, rgba(get-color(primary, 1), .8) 80%);
+	}
+
+	&.secondary-color {
+        background-color: get-color(secondary, 1);
+        background: linear-gradient(45deg, get-color(secondary, 1) 20%, rgba(get-color(secondary, 1), .8) 80%);
+    }
+    
+	&.tertiary-color {
+        background-color: get-color(tertiary, 1);
+        background: linear-gradient(45deg, get-color(tertiary, 1) 20%, rgba(get-color(tertiary, 1), .8) 80%);
+	}
+
+	&.quaternary-color {
+        background-color: get-color(quaternary, 1);
+        background: linear-gradient(45deg, get-color(quaternary, 1) 20%, rgba(get-color(quaternary, 1), .8) 80%);
+	}    
+}
