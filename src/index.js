@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router } from "react-router-dom";
+import { Router, BrowserRouter } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
 import App from './App';
@@ -12,9 +12,11 @@ import './assets/scss/style.scss';
 const history = createBrowserHistory();
 
 ReactDOM.render(
-  <Router history={history}>
-    <App />
-  </Router>,
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Router history={history}>
+      <App />
+    </Router>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

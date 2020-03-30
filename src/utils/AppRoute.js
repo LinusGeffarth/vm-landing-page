@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 const AppRoute = ({
   component: Component,
@@ -10,15 +10,13 @@ const AppRoute = ({
   Layout = (Layout === undefined) ? props => (<React.Fragment>{props.children}</React.Fragment>) : Layout;
 
   return (
-    <BrowserRouter basename={window.location.pathname || ''}>
-      <Route
-        {...rest}
-        render={props => (
-          <Layout>
-            <Component {...props} />
-          </Layout>
-        )} />
-      </BrowserRouter>
+    <Route
+      {...rest}
+      render={props => (
+        <Layout>
+          <Component {...props} />
+        </Layout>
+      )} />
   );
 }
 
