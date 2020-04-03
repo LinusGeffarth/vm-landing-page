@@ -19,7 +19,7 @@ class Testimonial extends React.Component {
     const {
       className,
       topOuterDivider,
-      bottomOuterDivider,      
+      bottomOuterDivider,
       topDivider,
       bottomDivider,
       hasBgColor,
@@ -49,7 +49,7 @@ class Testimonial extends React.Component {
     );
 
     const sectionHeader = {
-      title: 'Customer Testimonials',
+      title: 'Das sagen unsere Kunden:',
       paragraph: ''
     };
 
@@ -76,14 +76,12 @@ class Testimonial extends React.Component {
                   </div>
                   <div className="testimonial-item-content">
                     <p className="text-sm mb-0">
-                      — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.
-                      </p>
+                      Unser Freund Tobi hätte es cool gefunden. Über 40 Kumpels im Channel. Trauer Cafe um 23 Uhr? Ging! Klar waren alle traurig, aber mit unerer  Musik konnten wir so feiern, wie wir uns den Abschied vorstellen, zu der Uhrzeit, an der immer unsere Party geht.
+                    </p>
                   </div>
                   <div className="testimonial-item-footer mt-24 mb-0 pt-24 has-top-divider">
-                    <span className="testimonial-item-name text-sm fw-700">Erik Muliawan</span>
-                    <span className="testimonial-item-link text-xs fw-500">
-                      <a href="#0">AppName</a>
-                    </span>
+                    <span className="testimonial-item-name text-sm fw-700">Justus S.</span><br />
+                    <span className="testimonial-item-link text-xs fw-500">Jena</span>
                   </div>
                 </div>
               </div>
@@ -93,7 +91,7 @@ class Testimonial extends React.Component {
                   <div className="testimonial-item-header mb-24">
                     <div className="testimonial-item-image">
                       <Image
-                        src={require('./../../assets/images/testimonial-image-02.jpg')}
+                        src={require('./../../assets/images/heide-g.jpg')}
                         alt="Testimonial 02"
                         width={56}
                         height={56} />
@@ -101,14 +99,12 @@ class Testimonial extends React.Component {
                   </div>
                   <div className="testimonial-item-content">
                     <p className="text-sm mb-0">
-                      — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.
-                      </p>
+                      Meine Mutter ist in diesen unwirklichen Zeiten gestorben. Ich hatte erst Zweifel, aber die online Trauerfeier war ein tolles Erlebnis und sogar eine angemessene Abschiedsfeier. Meiner Mutter hätte es gefallen. Und ich bin überaus dankbar dafür.
+                    </p>
                   </div>
                   <div className="testimonial-item-footer mt-24 mb-0 pt-24 has-top-divider">
-                    <span className="testimonial-item-name text-sm fw-700">Tanya Litvinov</span>
-                    <span className="testimonial-item-link text-xs fw-500">
-                      <a href="#0">AppName</a>
-                    </span>
+                    <span className="testimonial-item-name text-sm fw-700">Heide G.</span><br />
+                    <span className="testimonial-item-link text-xs fw-500">Frankfurt a.M.</span>
                   </div>
                 </div>
               </div>
@@ -126,14 +122,12 @@ class Testimonial extends React.Component {
                   </div>
                   <div className="testimonial-item-content">
                     <p className="text-sm mb-0">
-                      — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.
-                      </p>
+                      Wir sind ein großes Bestattungsunternehmen. Durch die aktuelle Situation können wir keine Trauerfeiern durchführen. Für und und unsere Kunden ist die Online Gedenk- und Trauerfeier eine tolle Lösung. Und es bietet völig neue Möglichkeiten für die Zukunft.
+                    </p>
                   </div>
                   <div className="testimonial-item-footer mt-24 mb-0 pt-24 has-top-divider">
-                    <span className="testimonial-item-name text-sm fw-700">Mark Solberghe</span>
-                    <span className="testimonial-item-link text-xs fw-500">
-                      <a href="#0">AppName</a>
-                    </span>
+                    <span className="testimonial-item-name text-sm fw-700">Matthias Grote</span><br />
+                    <span className="testimonial-item-link text-xs fw-500">Bestatter in Bremen</span>
                   </div>
                 </div>
               </div>

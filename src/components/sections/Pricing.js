@@ -38,7 +38,7 @@ class Pricing extends React.Component {
       plan3: {
         0: ["$", "95", "monthly"],
         1: ["$", "87", "annually"]
-      }      
+      }
     }
   }
 
@@ -79,7 +79,7 @@ class Pricing extends React.Component {
     const {
       className,
       topOuterDivider,
-      bottomOuterDivider,      
+      bottomOuterDivider,
       topDivider,
       bottomDivider,
       hasBgColor,
@@ -111,7 +111,7 @@ class Pricing extends React.Component {
     );
 
     const sectionHeader = {
-      title: 'Simple pricing',
+      title: 'Unser Angebot',
       paragraph: ''
     };
 
@@ -148,40 +148,44 @@ class Pricing extends React.Component {
                   {this.getPricingData(this.state.priceInput)}
                 </div>
               </div>
-            }            
+            }
             <div className={tilesClasses}>
 
-              <div className="tiles-item illustration-element-06 reveal-scale-up" data-reveal-delay="150">
+              <div className="tiles-item illustration-element-06 reveal-scale-up" style={{ transform: 'translateY(50)' }} data-reveal-delay="150">
                 <div className="tiles-item-inner has-shadow">
                   <div className="pricing-item-content">
                     <div className="pricing-item-header pb-16 mb-24">
                       <div className="pricing-item-price">
-                        <span className="pricing-item-price-currency h2">
-                          {this.getPricingData(this.state.priceOutput.plan1, 0)}
-                        </span>
-                        <span className="pricing-item-price-amount h1">
-                          {this.getPricingData(this.state.priceOutput.plan1, 1)}
+                        <span className="pricing-item-header-title-secondary h2">
+                          Advanced
                         </span>
                       </div>
-                      <div className="text-color-low text-xs">
-                        /month, billed {this.getPricingData(this.state.priceOutput.plan1, 2)}
+                      <div className="pricing-item-header-subline">
+                        <div className="text-color-low text-xs">
+                          Trauerfeier ONLINE
+                        </div>
+                        <div className="pricing-price">
+                          980 €
+                        </div>
                       </div>
                     </div>
                     <div className="pricing-item-features mb-40">
                       <div className="pricing-item-features-title text-xs fw-500 text-color-high mb-24">
-                        What’s included <span role="img" aria-label="see below">👇</span>
+                        Was das beinhaltet <span role="img" aria-label="see below">👇</span>
                       </div>
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li>Excepteur sint occaecat velit</li>
-                        <li>Excepteur sint occaecat velit</li>
+                        <li className="is-checked">30 Min. moderierte Gedenkfeier</li>
+                        <li className="is-checked">Live-Streaming der Urne/Sarg</li>
+                        <li className="is-checked">Trauerrede ONLINE</li>
+                        <li className="is-checked">30 Min. moderiertes Trauer-Café</li>
+                        <li className="is-checked">Gedenkseite {'&'} Kondolenzbuch</li>
+                        <li className="is-checked">Mitschnitt der Gedenkfeier</li>
+                        <li>Live-Musik ONLINE (zubuchbar)</li>
                       </ul>
                     </div>
                   </div>
                   <div className="pricing-item-cta mb-8">
-                    <Button tag="a" color="primary" wide href="http://cruip.com/">Start free trial</Button>
+                    <Button tag="a" color="primary" wide href="#">Angebot buchen</Button>
                   </div>
                 </div>
               </div>
@@ -191,32 +195,35 @@ class Pricing extends React.Component {
                   <div className="pricing-item-content">
                     <div className="pricing-item-header pb-16 mb-24">
                       <div className="pricing-item-price">
-                        <span className="pricing-item-price-currency h2">
-                          {this.getPricingData(this.state.priceOutput.plan2, 0)}
-                        </span>
                         <span className="pricing-item-price-amount h1">
-                          {this.getPricingData(this.state.priceOutput.plan2, 1)}
+                          Gedenkfeier
                         </span>
                       </div>
-                      <div className="text-color-low text-xs">
-                        /month, billed {this.getPricingData(this.state.priceOutput.plan2, 2)}
+                      <div className="pricing-item-header-subline">
+                        <div className="text-color-low text-xs">
+                          Basis-Produkt ONLINE
+                        </div>
+                        <div className="pricing-price">
+                          0 €
+                        </div>
                       </div>
                     </div>
                     <div className="pricing-item-features mb-40">
                       <div className="pricing-item-features-title text-xs fw-500 text-color-high mb-24">
-                        What’s included <span role="img" aria-label="see below">👇</span>
+                      Was das beinhaltet <span role="img" aria-label="see below">👇</span>
                       </div>
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li>Excepteur sint occaecat velit</li>
+                        <li className="is-checked">30 Min. Zeremonie</li>
+                        <li className="is-checked">30 Min. moderiertes Trauer-Café</li>
+                        <li className="is-checked">Gedenkseite {'&'} Kondolenzbuch</li>
+                        <li className="is-checked">Mitschnitt der Gedenkfeier</li>
+                        <li>Trauerrede ONLINE</li>
+                        <li>Live-Musik ONLINE (zubuchbar)</li>
                       </ul>
                     </div>
                   </div>
                   <div className="pricing-item-cta mb-8">
-                    <Button tag="a" color="primary" wide href="http://cruip.com/">Start free trial</Button>
+                    <Button tag="a" color="primary" wide href="#">Kostenlos starten</Button>
                   </div>
                 </div>
               </div>
@@ -226,35 +233,33 @@ class Pricing extends React.Component {
                   <div className="pricing-item-content">
                     <div className="pricing-item-header pb-16 mb-24">
                       <div className="pricing-item-price">
-                        <span className="pricing-item-price-currency h2">
-                          {this.getPricingData(this.state.priceOutput.plan3, 0)}
-                        </span>
-                        <span className="pricing-item-price-amount h1">
-                          {this.getPricingData(this.state.priceOutput.plan3, 1)}
+                        <span className="pricing-item-header-title-secondary h2">
+                          Special Event
                         </span>
                       </div>
                       <div className="text-color-low text-xs">
-                        /month, billed {this.getPricingData(this.state.priceOutput.plan3, 2)}
+                        Trauerfeier ONLINE + Event {'&'} PR Specials
                       </div>
                     </div>
                     <div className="pricing-item-features mb-40">
                       <div className="pricing-item-features-title text-xs fw-500 text-color-high mb-24">
-                        What’s included <span role="img" aria-label="see below">👇</span>
+                      Was das beinhaltet <span role="img" aria-label="see below">👇</span>
                       </div>
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
+                        <li className="is-checked">Gedenkfeier ONLINE</li>
+                        <li className="is-checked">Open Event Channel</li>
+                        <li className="is-checked">Redner {'&'} Musik an Urne/Sarg</li>
+                        <li className="is-checked">Special Places für Urne/Sarg</li>
+                        <li className="is-checked">professionelles Kamerateam</li>
+                        <li className="is-checked">Live-Streaming</li>
                       </ul>
                     </div>
                   </div>
                   <div className="pricing-item-cta mb-8">
-                    <Button tag="a" color="primary" wide href="http://cruip.com/">Start free trial</Button>
+                    <Button tag="a" color="primary" wide href="#">individuelles Angebot ab 2.500 €</Button>
                   </div>
                 </div>
-              </div>                            
+              </div>
 
             </div>
           </div>

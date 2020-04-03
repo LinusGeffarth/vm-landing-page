@@ -64,14 +64,14 @@ class HeroSplit extends React.Component {
               <div className="split-item">
                 <div className="hero-content split-item-content center-content-mobile">
                   <h1 className="mt-0 mb-12 reveal-from-left" data-reveal-delay="150">
-                    Trauerfeiern trotz Corona. Online.
+                    Abschiednehmen trotz COVID19
                   </h1>
                   <p className="mt-0 mb-24 reveal-from-left" data-reveal-delay="300">
-                    Mit dem Angebot des Funeral Marketplace können Sie Trauer- und Gedenkfeiern online gestalten.
+                  Mit der Online-Gedenkfeier eröffnen wir Ihnen und Ihren Angehörigen die Möglichkeit, zusammen zu sein und einander zu stützen: per Video – professionell moderiert.
                   </p>
                   <div className="reveal-from-left" data-reveal-delay="450">
-                    <Button tag="a" color="primary" href="https://cruip.com/" wideMobile>
-                      Mehr Informationen
+                    <Button tag="a" color="primary" href="#" wideMobile>
+                      Unsere Angebote
                     </Button>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ class HeroSplit extends React.Component {
                   <div className="reveal-rotate-from-left" data-reveal-delay="450">
                     <Image
                       className="has-shadow"
-                      src={require('./../../assets/images/hero-image.svg')}
+                      src={require('./../../assets/illustrations/zoom-screenshot.jpg')}
                       alt="Hero"
                       width={528}
                       height={396} />

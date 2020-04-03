@@ -114,7 +114,7 @@ class Header extends React.Component {
                       'header-nav reveal-from-right',
                       this.state.isActive && 'is-active'
                     )}>
-                  <div className="header-nav-inner">
+                  {/* <div className="header-nav-inner">
                     <ul className={
                       classNames(
                         'list-reset text-xxs',
@@ -132,7 +132,7 @@ class Header extends React.Component {
                           <Link to="/signup/" className="button button-dark button-wide-mobile button-sm" onClick={this.closeMenu}>Sign up</Link>
                         </li>
                       </ul>}
-                  </div>
+                  </div> */}
                 </nav>
               </React.Fragment>}
           </div>

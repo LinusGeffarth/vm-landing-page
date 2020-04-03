@@ -19,7 +19,7 @@ class FeaturesTiles extends React.Component {
     const {
       className,
       topOuterDivider,
-      bottomOuterDivider,      
+      bottomOuterDivider,
       topDivider,
       bottomDivider,
       hasBgColor,
@@ -49,9 +49,39 @@ class FeaturesTiles extends React.Component {
     );
 
     const sectionHeader = {
-      title: '',
-      paragraph: ''
+      title: 'Für alles ist gesorgt',
+      paragraph: 'Professionell moderiert, ausgestattet und organisiert – von Mecklenburg-Vorpommern bis Bayern.'
     };
+
+    const items = [{
+      icon: 'rituals',
+      title: 'Rituale online zelebrieren',
+      text: 'Blumen nierderlegen, Kerzen anzünden, gemeinsam singen, Gebete sprechen, Bilder und Erinnerungen austauschen ist bei uns auch online möglich.'
+    }, {
+      icon: 'moderator',
+      title: 'Professionelle Moderation',
+      text: 'Ein zertifizierter Trauerredner oder Trauerbegleiter moderiert verlässlich alles vor, während und nach der Online-Gedenkfeier.'
+    }, {
+      icon: 'speaker',
+      title: 'Trauerredner online',
+      text: 'Ein zertifizierter Trauerredner setzt sich mit Ihnen in Verbindung, um die Trauerrede zu entwickeln und trägt diese in der Online-Gedenkfeier vor.'
+    }, {
+      icon: 'musician',
+      title: 'Tauermusiker online',
+      text: 'Auf Wunsch begleitet ein professioneller Trauermusiker Ihre Online-Gedenkfeier mit der Musik Ihrer Wahl.'
+    }, {
+      icon: 'video',
+      title: 'Feier-Dokumentation',
+      text: 'Die Beisetzung dokumentieren wir per Videomitschnitt und stellen die Aufnahme als Link Ihnen und den Trauergästen zur Verfügung.'
+    }, {
+      icon: 'support',
+      title: 'Service & Support',
+      text: 'Nach der Buchung Ihrer  Online-Gedenkfeier erhalten Sie und alle Teilnehmer Informationen zur Handhabung. '
+    }, {
+      icon: 'live',
+      title: 'Live-Streaming (geplant)',
+      text: 'Live-Bilder von der Urne oder dem Sarg werden vom Bestatter oder einem Kamerateam während der Beisetzung in die Online-Gedenkfeier eingespielt.'
+    }];
 
     return (
       <section
@@ -63,138 +93,29 @@ class FeaturesTiles extends React.Component {
             <SectionHeader data={sectionHeader} className="center-content" />
             <div className={tilesClasses}>
 
+            {items.map((item) =>
               <div className="tiles-item">
                 <div className="tiles-item-inner">
                   <div className="features-tiles-item-header">
-                    <div className="features-tiles-item-image tertiary-color mb-16 reveal-scale-up" data-reveal-container=".tiles-item">
+                    <div className="mb-24 reveal-scale-up" data-reveal-container=".tiles-item">
                       <Image
-                        src={require('./../../assets/images/feature-tile-icon-01.svg')}
-                        alt="Features tile icon 01"
+                        src={require('./../../assets/icons/' + item.icon + '.svg')}
+                        alt={item.title}
                         width={72}
                         height={72} />
                     </div>
                   </div>
                   <div className="features-tiles-item-content">
                     <h4 className="mt-0 mb-8 reveal-from-bottom" data-reveal-container=".tiles-item">
-                      Multiple Layouts
+                      {item.title}
                     </h4>
                     <p className="m-0 text-sm reveal-from-bottom" data-reveal-container=".tiles-item" data-reveal-delay="150">
-                      A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design for previewing layouts.
+                      {item.text}
                     </p>
                   </div>
                 </div>
               </div>
-
-              <div className="tiles-item">
-                <div className="tiles-item-inner">
-                  <div className="features-tiles-item-header">
-                    <div className="features-tiles-item-image secondary-color mb-16 reveal-scale-up" data-reveal-container=".tiles-item">
-                      <Image
-                        src={require('./../../assets/images/feature-tile-icon-02.svg')}
-                        alt="Features tile icon 02"
-                        width={72}
-                        height={72} />
-                    </div>
-                  </div>
-                  <div className="features-tiles-item-content">
-                    <h4 className="mt-0 mb-8 reveal-from-bottom" data-reveal-container=".tiles-item">
-                      Multiple Layouts
-                    </h4>
-                    <p className="m-0 text-sm reveal-from-bottom" data-reveal-container=".tiles-item" data-reveal-delay="150">
-                      A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design for previewing layouts.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="tiles-item">
-                <div className="tiles-item-inner">
-                  <div className="features-tiles-item-header">
-                    <div className="features-tiles-item-image tertiary-color mb-16 reveal-scale-up" data-reveal-container=".tiles-item">
-                      <Image
-                        src={require('./../../assets/images/feature-tile-icon-03.svg')}
-                        alt="Features tile icon 03"
-                        width={72}
-                        height={72} />
-                    </div>
-                  </div>
-                  <div className="features-tiles-item-content">
-                    <h4 className="mt-0 mb-8 reveal-from-bottom" data-reveal-container=".tiles-item">
-                      Multiple Layouts
-                    </h4>
-                    <p className="m-0 text-sm reveal-from-bottom" data-reveal-container=".tiles-item" data-reveal-delay="150">
-                      A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design for previewing layouts.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="tiles-item">
-                <div className="tiles-item-inner">
-                  <div className="features-tiles-item-header">
-                    <div className="features-tiles-item-image secondary-color mb-16 reveal-scale-up" data-reveal-container=".tiles-item">
-                      <Image
-                        src={require('./../../assets/images/feature-tile-icon-04.svg')}
-                        alt="Features tile icon 04"
-                        width={72}
-                        height={72} />
-                    </div>
-                  </div>
-                  <div className="features-tiles-item-content">
-                    <h4 className="mt-0 mb-8 reveal-from-bottom" data-reveal-container=".tiles-item">
-                      Multiple Layouts
-                    </h4>
-                    <p className="m-0 text-sm reveal-from-bottom" data-reveal-container=".tiles-item" data-reveal-delay="150">
-                      A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design for previewing layouts.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="tiles-item">
-                <div className="tiles-item-inner">
-                  <div className="features-tiles-item-header">
-                    <div className="features-tiles-item-image tertiary-color mb-16 reveal-scale-up" data-reveal-container=".tiles-item">
-                      <Image
-                        src={require('./../../assets/images/feature-tile-icon-05.svg')}
-                        alt="Features tile icon 05"
-                        width={72}
-                        height={72} />
-                    </div>
-                  </div>
-                  <div className="features-tiles-item-content">
-                    <h4 className="mt-0 mb-8 reveal-from-bottom" data-reveal-container=".tiles-item">
-                      Multiple Layouts
-                    </h4>
-                    <p className="m-0 text-sm reveal-from-bottom" data-reveal-container=".tiles-item" data-reveal-delay="150">
-                      A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design for previewing layouts.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="tiles-item">
-                <div className="tiles-item-inner">
-                  <div className="features-tiles-item-header">
-                    <div className="features-tiles-item-image secondary-color mb-16 reveal-scale-up" data-reveal-container=".tiles-item">
-                      <Image
-                        src={require('./../../assets/images/feature-tile-icon-06.svg')}
-                        alt="Features tile icon 06"
-                        width={72}
-                        height={72} />
-                    </div>
-                  </div>
-                  <div className="features-tiles-item-content">
-                    <h4 className="mt-0 mb-8 reveal-from-bottom" data-reveal-container=".tiles-item">
-                      Multiple Layouts
-                    </h4>
-                    <p className="m-0 text-sm reveal-from-bottom" data-reveal-container=".tiles-item" data-reveal-delay="150">
-                      A pseudo-Latin text used in web design, layout, and printing in place of things to emphasise design for previewing layouts.
-                    </p>
-                  </div>
-                </div>
-              </div>              
-
+            )}
             </div>
           </div>
         </div>

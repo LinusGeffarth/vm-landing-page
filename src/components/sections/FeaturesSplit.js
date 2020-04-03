@@ -54,9 +54,31 @@ class FeaturesSplit extends React.Component {
     );
 
     const sectionHeader = {
-      title: 'Virtuelle Trauerfeiern',
-      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.'
+      title: 'Ihre Gedenkfeier online',
+      paragraph: 'Alles, was Ihnen aus der klassischen Gedenkfeier bekannt und vertraut ist, erleben Sie auch in der Online-Gedenkfeier: '
     };
+
+    const items = [{
+      image: '',
+      title: 'Traditionelle Zeremonie',
+      subtitle: 'Mit Blumen, Rede, Kerzen, Bildern und Musik',
+      text: 'Ein zertifizierter Trauerredner oder Trauerbegleiter Ihrer Wahl moderiert die Online-Gedenkfeier nach einem klaren Ablauf und über einen Online-Channel und kümmert sich verlässlich um alles Organisatorische – vor, während und nach Ihrem Zusammensein. '
+    }, {
+      image: '',
+      title: 'Gedenkseite & Kondolenzbuch',
+      subtitle: 'Damit Gedanken und Worte bleiben',
+      text: 'Jede Online-Gedenkfeier erhält eine kostenlose Gedenkseite auf dem bedeutensten Online-Gedenkportal: mit Fotos und Videos des Verstorbenen, seinen Lebensdaten sowie dem Kondolenzbuch.\nDen Link zur Gedenkseite erhalten alle Trauergäste vorab. So können sie sich vor und nach der Online-Gedenkfeier dort eintragen. Aber auch während der Online-Gedenkfeier ist das möglich: per Chat an den Moderator, der Ihre Worte später ins Kondolenzbuch überträgt.'
+    }, {
+      image: '',
+      title: 'Trauer-Café online',
+      subtitle: 'So sind auch nach der Online-Gedenkfeier nicht allein',
+      text: 'Nach der Online-Gedenkfeier beisammen sein, sich austauschen und einander stützen: Das ist für viele Trauergäste sehr wichtig, und im Online-Trauer-Café haben Sie dazu die Gelegenheit. Ihr Moderator aus der Online-Gedenkfeier begleitet Sie beim Austausch von Gedanken und Erinnerungen.'
+    }, {
+      image: '',
+      title: 'Dokumentation der Gedenkfeier',
+      subtitle: 'Wie wir Gedanken, Trost und Anteilnahme für Sie festhalten ',
+      text: 'Ein Abschied ist ein einmaliger Moment. Doch nehmen die meisten Menschen diesen Moment nur benommen wahr. Aus diesem Grund sind im Nachhinein die Anteilnahme, die tröstenden Gedanken der anderen Trauergäste und das Teilen des Verlusts sehr wichtig. Um Ihnen das zugänglich zu machen, bieten wir Ihnen die Aufnahmen der Online-Gedenkfeier als Audio- und Video-Datei an, die Sie im Nachgang als Download-Link erhalten.'
+    }];
 
     return (
       <section
@@ -68,98 +90,41 @@ class FeaturesSplit extends React.Component {
             <SectionHeader data={sectionHeader} className="center-content" />
             <div className={splitClasses}>
 
-              <div className="split-item">
-                <div className="split-item-content center-content-mobile">
-                  <h3 className="mt-0 mb-16 reveal-from-left" data-reveal-container=".split-item">
-                    Origins and Discovery
-                  </h3>
-                  <p className="m-0 reveal-from-left" data-reveal-delay="100" data-reveal-container=".split-item">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-                <div className={
-                  classNames(
-                    'split-item-image center-content-mobile illustration-element-03 reveal-scale-up',
-                    imageFill && 'split-item-image-fill'
-                  )}
-                  data-reveal-container=".split-item"
-                  data-reveal-delay="200">
-                  <Image
-                    src={require('./../../assets/images/features-split-image.svg')}
-                    alt="Features split 01"
-                    width={528}
-                    height={396} />
-                  <div style={imgOddStyle}>
+              {items.map(item =>
+                <div className="split-item">
+                  <div className="split-item-content center-content-mobile">
+                    <h3 className="mt-0 mb-16 reveal-from-left" data-reveal-container=".split-item">
+                      {item.title}
+                    </h3>
+                    <p className="m-0 reveal-from-left" style={{ marginBottom: 10 }} data-reveal-delay="100" data-reveal-container=".split-item">
+                      <b>{item.subtitle}</b><br />
+                    </p>
+                    <p className="m-0 reveal-from-left" style={{ whiteSpace: 'pre-wrap' }} data-reveal-delay="100" data-reveal-container=".split-item">
+                      {item.text}
+                    </p>
+                  </div>
+                  <div className={
+                    classNames(
+                      'split-item-image center-content-mobile illustration-element-03 reveal-scale-up',
+                      imageFill && 'split-item-image-fill'
+                    )}
+                    data-reveal-container=".split-item"
+                    data-reveal-delay="200">
                     <Image
-                      src={require('./../../assets/images/features-split-top-01.png')}
-                      alt="Features split top 01"
-                      width={700}
-                      height={583} />
+                      src={require('./../../assets/images/features-split-image.svg')}
+                      alt="Features split 01"
+                      width={528}
+                      height={396} />
+                    <div style={imgOddStyle}>
+                      <Image
+                        src={require('./../../assets/images/features-split-top-01.png')}
+                        alt="Features split top 01"
+                        width={700}
+                        height={583} />
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div className="split-item">
-                <div className="split-item-content center-content-mobile">
-                  <h3 className="mt-0 mb-16 reveal-from-right" data-reveal-container=".split-item">
-                    Origins and Discovery
-                  </h3>
-                  <p className="m-0 reveal-from-right" data-reveal-delay="100" data-reveal-container=".split-item">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-                <div className={
-                  classNames(
-                    'split-item-image center-content-mobile illustration-element-04 reveal-scale-up',
-                    imageFill && 'split-item-image-fill'
-                  )}
-                  data-reveal-container=".split-item"
-                  data-reveal-delay="200">
-                  <Image
-                    src={require('./../../assets/images/features-split-image.svg')}
-                    alt="Features split 02"
-                    width={528}
-                    height={396} />
-                  <div style={imgEvenStyle}>
-                    <Image
-                      src={require('./../../assets/images/features-split-top-02.png')}
-                      alt="Features split top 02"
-                      width={700}
-                      height={583} />
-                  </div>
-                </div>
-              </div>
-
-              <div className="split-item">
-                <div className="split-item-content center-content-mobile">
-                  <h3 className="mt-0 mb-16 reveal-from-left" data-reveal-container=".split-item">
-                    Origins and Discovery
-                  </h3>
-                  <p className="m-0 reveal-from-left" data-reveal-delay="100" data-reveal-container=".split-item">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-                <div className={
-                  classNames(
-                    'split-item-image center-content-mobile illustration-element-05 reveal-scale-up',
-                    imageFill && 'split-item-image-fill'
-                  )}
-                  data-reveal-container=".split-item"
-                  data-reveal-delay="200">
-                  <Image
-                    src={require('./../../assets/images/features-split-image.svg')}
-                    alt="Features split 03"
-                    width={528}
-                    height={396} />
-                  <div style={imgOddStyle}>
-                    <Image
-                      src={require('./../../assets/images/features-split-top-03.png')}
-                      alt="Features split top 03"
-                      width={700}
-                      height={583} />
-                  </div>
-                </div>
-              </div>
+              )}
 
             </div>
           </div>
@@ -177,13 +142,13 @@ const imgOddStyle = {
   left: '-16.1%'
 }
 
-const imgEvenStyle = {
-  position: 'absolute',
-  width: '132.57%',
-  maxWidth: '132.57%',
-  top: '-20.2%',
-  left: '-16.6%'
-}
+// const imgEvenStyle = {
+//   position: 'absolute',
+//   width: '132.57%',
+//   maxWidth: '132.57%',
+//   top: '-20.2%',
+//   left: '-16.6%'
+// }
 
 FeaturesSplit.propTypes = propTypes;
 FeaturesSplit.defaultProps = defaultProps;

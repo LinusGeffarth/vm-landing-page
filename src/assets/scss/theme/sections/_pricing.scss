@@ -32,22 +32,32 @@
 	}
 
 	.form-switch {
-	
+
 		input:checked {
-	
+
 			+ .form-switch-icon {
 				background: get-color(secondary, 1);
 			}
 		}
-	}	
+	}
 }
 
 .pricing-item-header {
 	@include divider(after);
 }
 
-.pricing-item-price-currency {
+.pricing-item-header-title-secondary {
 	color: color(base);
+}
+
+.pricing-item-header-subline {
+	display: flex;
+	justify-content: space-between;
+}
+
+.pricing-price {
+	color: #5FFAD0;
+	font-size: 36px;
 }
 
 ul.pricing-item-features-list {
@@ -89,4 +99,23 @@ ul.pricing-item-features-list {
 			}
 		}
     }
+}
+
+@include media( '>1145px' ) { // 1145px may need to be adjusted if pricing items width or outer padding change
+	.pricing {
+
+		.tiles-wrap {
+			padding-bottom: 100px;
+		}
+
+		.tiles-item {
+			&:nth-child(3n+1) {
+				top: 50px;
+			}
+
+			&:nth-child(3n+3) {
+				top: 100px;
+			}
+		}
+	}
 }

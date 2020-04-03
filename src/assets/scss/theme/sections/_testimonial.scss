@@ -4,7 +4,7 @@
 		position: relative;
 
 		&:first-child {
-			
+
 			&::before {
 				content: '';
 				display: block;
@@ -38,14 +38,10 @@
 }
 
 .testimonial-item-link {
-
-	a:not(.button) {
-		color: get-color(secondary, 1);
-		text-decoration: none;
-	}
+	color: #5D6795;
 }
 
-@include media( '>1145px' ) { // 1145px may need to e adjusted if testimonial items width or outer padding change
+@include media( '>1145px' ) { // 1145px may need to be adjusted if testimonial items width or outer padding change
 	.testimonial {
 
 		.tiles-wrap {
@@ -55,12 +51,12 @@
 		.tiles-item {
 
 			&:first-child {
-				
+
 				&::before {
 					top: -136px;
 					left: calc(50% - 44px);
 				}
-			}			
+			}
 
 			&:nth-child(3n+1) {
 				top: 152px;

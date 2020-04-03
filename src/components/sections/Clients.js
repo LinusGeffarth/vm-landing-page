@@ -40,6 +40,14 @@ class Clients extends React.Component {
       bottomDivider && 'has-bottom-divider'
     );
 
+    const logos = [
+      { image: 'omilia', name: 'Omilia', url: 'https://omilia.de', width: 80, height: 20 },
+      { image: 'gedenkseiten', name: 'Gedenkseiten.de', url: 'https://gedenkseiten.de', width: 180, height: 30 },
+      { image: 'convela', name: 'CONVELA', url: 'https://convela.de', width: 170, height: 30 },
+      { image: 'asv', name: 'ASV Deutschland', url: 'https://asv-deutschland.de', width: 120, height: 40 },
+      { image: 'art_funeral', name: 'Art Funeral Italy', url: 'https://app.funeral-market.place/vendor/350/caveau', width: 160, height: 40 }
+    ];
+
     return (
       <section
         {...props}
@@ -50,41 +58,19 @@ class Clients extends React.Component {
             className={innerClasses}
           >
             <ul className="list-reset">
-              <li className="reveal-rotate-from-left">
-                <Image
-                  src={require('./../../assets/images/clients-01.svg')}
-                  alt="Client 01"
-                  width={132}
-                  height={37} />
-              </li>
-              <li className="reveal-rotate-from-left" data-reveal-delay="150">
-                <Image
-                  src={require('./../../assets/images/clients-02.svg')}
-                  alt="Client 02"
-                  width={80}
-                  height={28} />
-              </li>
-              <li className="reveal-rotate-from-left" data-reveal-delay="300">
-                <Image
-                  src={require('./../../assets/images/clients-03.svg')}
-                  alt="Client 03"
-                  width={130}
-                  height={29} />
-              </li>
-              <li className="reveal-rotate-from-left" data-reveal-delay="450">
-                <Image
-                  src={require('./../../assets/images/clients-04.svg')}
-                  alt="Client 04"
-                  width={105}
-                  height={22} />
-              </li>
-              <li className="reveal-rotate-from-left" data-reveal-delay="600">
-                <Image
-                  src={require('./../../assets/images/clients-05.svg')}
-                  alt="Client 05"
-                  width={124}
-                  height={24} />
-              </li>
+              {logos.map((logo, index) =>
+                <li className="reveal-rotate-from-left" data-reveal-delay={index * 150}>
+                  <a href={logo.url} target="_blank" rel="noopener noreferrer">
+                    <Image
+                      className="clients-logo"
+                      src={require('./../../assets/logos/' + logo.image + '.png')}
+                      alt={logo.name}
+                      width={logo.width}
+                      height={logo.height}
+                    />
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
         </div>

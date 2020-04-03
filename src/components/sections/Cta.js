@@ -20,7 +20,7 @@ class Cta extends React.Component {
     const {
       className,
       topOuterDivider,
-      bottomOuterDivider,      
+      bottomOuterDivider,
       topDivider,
       bottomDivider,
       hasBgColor,
@@ -56,12 +56,12 @@ class Cta extends React.Component {
           >
             <div className="cta-slogan">
               <h3 className="m-0">
-                Nisi porta lorem mollis aliquam ut.
+                Sie haben spezielle Wünsche?
               </h3>
             </div>
             <div className="cta-action">
               <Button tag="a" color="secondary" wideMobile href="#0">
-                Get started
+                Kontakt aufnehmen
               </Button>
             </div>
           </div>
