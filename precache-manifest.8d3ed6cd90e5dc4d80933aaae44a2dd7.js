@@ -1,67 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f55e73398870ed7efc07b9c05359beb9",
+    "revision": "831349143864df5e1e133bb74421b2d7",
     "url": "/index.html"
   },
   {
-    "revision": "6c7621737f007ff7d2d6",
-    "url": "/static/css/main.cda09651.chunk.css"
+    "revision": "6394b12e3349af7f87ca",
+    "url": "/static/css/main.63373a4c.chunk.css"
   },
   {
-    "revision": "15ec6938fc5acfbaa51b",
-    "url": "/static/js/2.f2c5f2df.chunk.js"
+    "revision": "a5d15a48ea6d151a16bc",
+    "url": "/static/js/2.ed80e128.chunk.js"
   },
   {
-    "revision": "6c7621737f007ff7d2d6",
-    "url": "/static/js/main.0094d93a.chunk.js"
+    "revision": "6394b12e3349af7f87ca",
+    "url": "/static/js/main.d7ae7900.chunk.js"
   },
   {
     "revision": "416739b1ddd47b384332",
     "url": "/static/js/runtime~main.a30de6b3.js"
   },
   {
-    "revision": "22e0f52c3a97a6d0fed0f463e4e6b831",
-    "url": "/static/media/clients-01.22e0f52c.svg"
+    "revision": "0c6b0d6f8c4941bcf3f2a6523f3dd8a8",
+    "url": "/static/media/art_funeral.0c6b0d6f.png"
   },
   {
-    "revision": "a07f35fe00ab1df91b4c59bc9122e348",
-    "url": "/static/media/clients-02.a07f35fe.svg"
+    "revision": "194fa8e3877e0aa84836581439fdef4d",
+    "url": "/static/media/asv.194fa8e3.png"
   },
   {
-    "revision": "4bc8d69990c5f0213ecb598b885e8f99",
-    "url": "/static/media/clients-03.4bc8d699.svg"
-  },
-  {
-    "revision": "07d58e8d058ac9d9734489d7ef071d74",
-    "url": "/static/media/clients-04.07d58e8d.svg"
-  },
-  {
-    "revision": "17294b0cf5171836d9c6b8e771f53c59",
-    "url": "/static/media/clients-05.17294b0c.svg"
-  },
-  {
-    "revision": "d7c50c238c17476d6506e78f0c102b0d",
-    "url": "/static/media/feature-tile-icon-01.d7c50c23.svg"
-  },
-  {
-    "revision": "c32ca5a14ef235de38ab00e6a7711ddf",
-    "url": "/static/media/feature-tile-icon-02.c32ca5a1.svg"
-  },
-  {
-    "revision": "1a3ad78fe29e70078f55d8a1f0635bee",
-    "url": "/static/media/feature-tile-icon-03.1a3ad78f.svg"
-  },
-  {
-    "revision": "5b966f3dc5ad5669a0d0e24f783bac5a",
-    "url": "/static/media/feature-tile-icon-04.5b966f3d.svg"
-  },
-  {
-    "revision": "14891b29d2164d8524b62dc6d7c2e36b",
-    "url": "/static/media/feature-tile-icon-05.14891b29.svg"
-  },
-  {
-    "revision": "0c7d62077327a4ceb649e657e32188da",
-    "url": "/static/media/feature-tile-icon-06.0c7d6207.svg"
+    "revision": "640a14cfa5817e7a8f7ba52836f1a2b5",
+    "url": "/static/media/convela.640a14cf.png"
   },
   {
     "revision": "ce83ce96f32022dc52fde101342378d2",
@@ -72,16 +40,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/features-split-top-01.a64504fe.png"
   },
   {
-    "revision": "25ede83fc73ab5269ff49a27932cce20",
-    "url": "/static/media/features-split-top-02.25ede83f.png"
+    "revision": "79a963b93091c67b63a59f28f8cb2a2d",
+    "url": "/static/media/gedenkseiten.79a963b9.png"
   },
   {
-    "revision": "f7adfcf01710321354ade12bb2c21587",
-    "url": "/static/media/features-split-top-03.f7adfcf0.png"
-  },
-  {
-    "revision": "4ad56217dd7f6bd299afec94aa49ed72",
-    "url": "/static/media/hero-image.4ad56217.svg"
+    "revision": "3385da0bde5ed54b0c1fcf55444e02d0",
+    "url": "/static/media/heide-g.3385da0b.jpg"
   },
   {
     "revision": "fc3ce2f7936d5a003a408187ac051ca8",
@@ -148,8 +112,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/image-placeholder.f62c8ee2.png"
   },
   {
+    "revision": "23a12cc8fb27dc178a7159e7e89aa4e5",
+    "url": "/static/media/live.23a12cc8.svg"
+  },
+  {
     "revision": "285db1c354fc89853736b39021a5ffd2",
     "url": "/static/media/logo.285db1c3.svg"
+  },
+  {
+    "revision": "329f430f4bad836445269323d719b276",
+    "url": "/static/media/moderator.329f430f.svg"
+  },
+  {
+    "revision": "a01eb86ef2b49788c43c334b723fd879",
+    "url": "/static/media/musician.a01eb86e.svg"
+  },
+  {
+    "revision": "e0d7ff615eac4fe8b4d5bcf450b14bdf",
+    "url": "/static/media/rituals.e0d7ff61.svg"
+  },
+  {
+    "revision": "499d4b72cabfe5b646fadd2d7e100f45",
+    "url": "/static/media/speaker.499d4b72.svg"
+  },
+  {
+    "revision": "c833e579e6154bc4a7037d17bf0108ad",
+    "url": "/static/media/support.c833e579.svg"
   },
   {
     "revision": "dcce6a7973932a51efc23a57512a7792",
@@ -166,5 +154,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ec9e554e5a3b4dcaa871435262f74495",
     "url": "/static/media/video-placeholder.ec9e554e.png"
+  },
+  {
+    "revision": "8c9e88dc18ae0ea6546788e85d234fe9",
+    "url": "/static/media/video.8c9e88dc.svg"
+  },
+  {
+    "revision": "1a6a664a3d2aaf8c193c208924c5fd9c",
+    "url": "/static/media/zoom-screenshot.1a6a664a.jpg"
   }
 ]);
