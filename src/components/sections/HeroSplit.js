@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
+import { Link } from 'react-router-dom';
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -70,19 +71,21 @@ class HeroSplit extends React.Component {
                   Mit der Online-Gedenkfeier eröffnen wir Ihnen und Ihren Angehörigen die Möglichkeit, zusammen zu sein und einander zu stützen: per Video – professionell moderiert.
                   </p>
                   <div className="reveal-from-left" data-reveal-delay="450">
-                    <Button tag="a" color="primary" href="#" wideMobile>
+                    <Button tag="a" color="primary" href="/#pricing" wideMobile>
                       Unsere Angebote
                     </Button>
                   </div>
                 </div>
                 <div className="hero-figure is-3d split-item-image illustration-element-01">
                   <div className="reveal-rotate-from-left" data-reveal-delay="450">
-                    <Image
-                      className="has-shadow"
-                      src={require('./../../assets/illustrations/zoom-screenshot.jpg')}
-                      alt="Hero"
-                      width={528}
-                      height={396} />
+                    <Link to="/more-info">
+                      <Image
+                        className="has-shadow"
+                        src={require('./../../assets/illustrations/zoom-screenshot-video.jpg')}
+                        alt="Hero"
+                        width={528}
+                        height={396} />
+                    </Link>
                   </div>
                 </div>
               </div>

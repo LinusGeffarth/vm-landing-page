@@ -9,10 +9,10 @@ import Roadmap from '../components/sections/Roadmap';
 import Cta from '../components/sections/Cta';
 // import some required elements
 import Image from '../components/elements/Image';
-import Input from '../components/elements/Input';
-import ButtonGroup from '../components/elements/ButtonGroup';
+// import Input from '../components/elements/Input';
+// import ButtonGroup from '../components/elements/ButtonGroup';
 import Button from '../components/elements/Button';
-import Modal from '../components/elements/Modal';
+// import Modal from '../components/elements/Modal';
 import Accordion from '../components/elements/Accordion';
 import AccordionItem from '../components/elements/AccordionItem';
 
@@ -34,61 +34,127 @@ class Secondary extends React.Component {
 
   render() {
 
-    const genericSection01Header = {
-      title: 'Buttons - Lorem ipsum is placeholder text commonly used.'
-    }
+    // const genericSection01Header = {
+    //   title: 'Buttons - Lorem ipsum is placeholder text commonly used.'
+    // }
 
-    const genericSection02Header = {
-      title: 'Input forms - Lorem ipsum is placeholder text commonly used.'
-    }
+    // const genericSection02Header = {
+    //   title: 'Input forms - Lorem ipsum is placeholder text commonly used.'
+    // }
 
-    const genericSection03Header = {
-      title: 'Modal - Lorem ipsum is placeholder text commonly used.'
-    }
+    // const genericSection03Header = {
+    //   title: 'Modal - Lorem ipsum is placeholder text commonly used.'
+    // }
 
     const genericSection04Header = {
-      title: 'FAQ - Lorem ipsum is placeholder text commonly used.'
+      title: 'FAQ - Hier sind die wichtigsten Fragen und Antworten.'
     }
 
     return (
       <React.Fragment>
         <HeroFull className="illustration-section-02" />
         <Team />
+        <Roadmap topDivider />
 
         <GenericSection topDivider>
           <div className="container-xs">
-            <h2 className="mt-0">Lorem ipsum is placeholder text commonly used in the graphic.</h2>
+            <h2 className="mt-0">Gedenk- und Trauerfeier trotz COVID19</h2>
             <p>
-              Lorem ipsum dolor sit amet, <a href="#0">consectetur adipiscing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Die Bundesregierung und die Landesregierungen haben das öffentliche Leben während der SARS-CoV-2-Pandemie deutlichen Einschränkungen unterworfen. Geschäfte sind geschlossen, soziale Kontakte minimiert. Das hat auch Auswirkungen auf Bestattungen und Trauerfeiern. Welche Regelungen in Ihrem Bundesland gelten, fasst dieser Artikel zusammen:
             </p>
             <figure>
               <Image
                 className="image-larger"
-                src={require('./../assets/images/image-placeholder.png')}
+                src={require('./../assets/illustrations/ceremonies-forbidden.jpg')}
                 alt="Placeholder"
                 width={712}
                 height={400} />
-              <figcaption className="text-color-low">A super-nice image <span role="img" aria-label="mile">😀</span></figcaption>
+              <figcaption className="text-color-low">© <a href="https://hoppiright.com/" target="_blank" rel="noopener noreferrer">Hoppiright</a></figcaption>
             </figure>
-            <h4>Flexibility</h4>
+            <h4>Allgemeine Regelungen, die für alle Bundesländer gelten:</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Eines haben alle Bundesländer gemeinsam: Bestattungen und Trauerfeiern können zumindest im Freien und in einem kleinen Rahmen stattfinden, sie sind also nicht vollständig untersagt. Außerdem müssen — wie generell beim Betreten öffentlicher Räume — die derzeit geltenden Regeln für den Infektionsschutz eingehalten werden, insbesondere ein Mindestabstand zwischen zwei Personen von 2 Metern und die bekannten Hygiene-Vorgaben des Robert-Koch-Instituts. Im Zweifel hilft eine Anfrage bei der örtlichen Friedhofsverwaltung oder beim Gesundheitsamt. Und natürlich kann eine Gedenkfeier oder ein Gedenkgottesdienst zu einem späteren Zeitpunkt all jene einschließen, die nicht persönlich an der Bestattung teilnehmen konnten. Damit enden die Gemeinsamkeiten aber auch schon.
             </p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur.</li>
-            </ul>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
+            <Accordion>
+              <AccordionItem title="Folgendes gilt für Trauerfeiern in Ihrem Bundesland">
+                <h5>Baden-Württemberg</h5>
+                <p>
+                  Im Freien mit bis zu 10 Personen und einem Pfarrer oder einer Pfarrerin, ggf. unter Angabe der Personendaten
+                </p>
+                <h5>Bayern</h5>
+                <p>
+                  Im engsten Familien- und Freundeskreis mit vorheriger Information der örtlichen Behörden und Beachtung von deren Vorschriften
+                </p>
+                <h5>Berlin</h5>
+                <p>
+                  Begleitung Sterbender und Beerdigung im engsten Familien- oder Freundeskreis mit bis zu 10 Personen
+                </p>
+                <h5>Brandenburg</h5>
+                <p>
+                  Im Freien, Begleitung Sterbender und Beerdigung im engsten Familien- oder Freundeskreis mit bis zu 10 Personen, mit Genehmigung des Gesundheitsamts und mit einer Liste der Teilnehmenden auch bis zu 20 Personen
+                </p>
+                <h5>Bremen</h5>
+                <p>
+                  Bis zu 20 Personen, Landeskirche empfiehlt Beschränkung auf 10 Personen
+                </p>
+                <h5>Hamburg</h5>
+                <p>
+                  Im engen familiären Kreis (auch enge Freunde); keine Trauerfeiern auf staatlichen Friedhöfen, Beisetzung mit höchstens 6 Personen plus Friedhofspersonal und Pfarrer; auf kirchlichen Friedhöfen im Freien 20 Personen
+                </p>
+                <h5>Hessen</h5>
+                <p>
+                  Kommunal unterschiedliche Regelungen zu Trauerfeiern in Räumen und/oder im Freien und zur Zahl der Teilnehmenden
+                </p>
+                <h5>Mecklenburg-Vorpommern</h5>
+                <p>
+                  Beisetzungen im engsten Familienkreis, bei Kirchen nur im Freien
+                </p>
+                <h5>Niedersachsen</h5>
+                <p>
+                  Begleitung Sterbender und Trauerfeiern im engsten Familienkreis
+                </p>
+                <h5>Nordrhein-Westfalen</h5>
+                <p>
+                  Trauerfeiern und -gottesdienste auch in Trauerhallen und Kirchen, teilweise strengere Regelungen in einzelnen Kommunen 
+                </p>
+                <h5>Rheinland-Pfalz</h5>
+                <p>
+                  Bestattungen im engsten Familienkreis
+                </p>
+                <h5>Saarland</h5>
+                <p>
+                  Im Freien, die Personenzahl legt die jeweilige Kommune fest
+                </p>
+                <h5>Sachsen</h5>
+                <p>
+                  Im Freien mit bis zu 15 engen Angehörigen und einer seelsorgerischen Begleitung  
+                </p>
+                <h5>Sachsen-Anhalt</h5>
+                <p>
+                  Im Freien im engsten Familienkreis
+                </p>
+                <h5>Schleswig-Holstein</h5>
+                <p>
+                  Im kleinstmöglichen Kreis ohne Trauerfeiern in Kirchen, Synagogen oder Moscheen
+                </p>
+                <h5>Thüringen</h5>
+                <p>
+                  Im Freien mit Verwandten ersten und zweiten Grades plus Pfarrer oder Pfarrerin
+                </p>
+                <h5>Außerdem </h5>
+                <p>
+                  ...sind in Hessen, Sachsen-Anhalt und Thüringen teilweise Kirchen geschlossen oder es dürfen sich nur wenige Personen in einer Kirche aufhalten. Hierfür stehen jeweils landesweite Regelungen aus. Insgesamt ist es also sehr empfehlenswert, sich kurzfristig zu erkundigen, was gerade möglich ist. Und bei einer Urnenfeier bleibt auch immer eine Verschiebung der Bestattung eine Option, um doch noch allen den Abschied zu ermöglichen.
+                </p>
+              </AccordionItem>
+            </Accordion>
+          </div>
+
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <Button tag="a" href="/#solution" color="dark" style={{ marginTop: 60 }} wideMobile>zur Online-Lösung</Button>
           </div>
         </GenericSection>
 
-        <GenericSection topDivider className="center-content">
+        {/* <GenericSection topDivider className="center-content">
           <div className="container-xs">
             <SectionHeader data={genericSection01Header} className="center-content" />
             <ButtonGroup>
@@ -179,34 +245,44 @@ class Secondary extends React.Component {
               </div>
             </Modal>
           </div >
-        </GenericSection>
+        </GenericSection> */}
 
         <GenericSection>
-          <div className="container-xs">
+          <div className="container-xs" id="faq">
             <SectionHeader data={genericSection04Header} className="center-content" />
             <Accordion>
-              <AccordionItem title="Nisi porta lorem mollis aliquam ut." active>
-                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+              <AccordionItem title="Wie verläuft eine Online Gedenkfeier?" active>
+                <b>Die Zeremonie</b><br />
+                Zum vereinbarten Termin - Datum und Uhrzeit - eröffnet die Moderatorin / der Moderator den virtuellen Raum für die Gedenk- oder Trauerfeier für alle eingeladenen Trauergäste.<br />
+                Sie oder er begrüßt alle Trauergäste und beginnt die 30-minütige Gedenk- oder Trauerfeier mit Fotos, Musik und persönlichen Worten, ganz so, wie es mit den Angehörigen im Vorfeld genau besprochen wurde.<br />
+                Über Rituale während der Feier bindet die Moderatorin / der Moderator alle Trauergäste ein. Individuelle Elemente schaffen einen emotionalen Raum für einen gemeinsam erlebten Abschied. Jeder kann, aber niemand muss etwas einbringen. Unsere erfahrenen Moderator:innen führen professionell und kompetent durch die Zeremonie.
               </AccordionItem>
-              <AccordionItem title="Nisi porta lorem mollis aliquam ut.">
-                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+              <AccordionItem title="Welche technischen Voraussetzungen und Kenntnisse muss ich haben?">
+                <b>Im Vorfeld</b><br />
+                Alle Trauergäste bekommen per E-Mail eine persönliche Einladung mit den nötigen Zugangsdaten für den online Konferenzraum.<br />
+                Der virtuelle Raum für die Online Gedenk-oder Trauerfeier kann über einen Computer, ein Tablet oder ein Smartphone benutzt werden.<br />
+                Es sollte eine mittelmäßig bis gute Kamera am Gerät sein.<br />
+                Für ein gutes Bild wäre es sinnvoll, wenn das Gerät während der Feier feststeht oder liegt, damit wacklige Bilder vermieden werden.<br />
+                Außerdem sorgt ein Headset mit Mikrofon-funktion meistens für eine bessere Tonqualität.<br />
+                Alle Gäste sollten mindestens 15 Minuten vor Beginn der Online-Trauerfeier im online „Warteraum“ sein und die Internetverbindung sowie Ton- und Bildqualität zu testen. Wenn Sie dafür technische Unterstützung wünschen, buchen Sie diesen Service für sich und Ihre Trauergäste.
               </AccordionItem>
-              <AccordionItem title="Nisi porta lorem mollis aliquam ut.">
-                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+              <AccordionItem title="Was ist ein Online Trauer-Café?">
+                Während die Zeremonie einem festen Ablauf folgt und damit einen offizielleren Charakter hat, ist das 30-minütige „Trauer-Café“ für den lockereren Austausch von Gedanken, Erinnerungen, Bildern. Es kann eine Unterhaltung entstehen; es können Anekdoten erzählt werden und natürlich können die Trauergäste gemeinsam singen und musizieren. Hier moderiert der Trauerfeier-Moderator zurückhaltend und stellt die ein gutes Gesprächsklima her.<br />
+                Spontane Entwicklungen sind gewünscht; ggf. kann die Dauer auch verlängert werden.
               </AccordionItem>
-              <AccordionItem title="Nisi porta lorem mollis aliquam ut.">
-                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+              <AccordionItem title="Brauche ich einen Bestatter?">
+                <b>Nein</b>, Sie brauchen keinen Bestatter.<br />
+                Für eine Online Gedenkfeier benötigen Sie keinen Bestatter. Wenn Sie eine Online-Trauerfeier wünschen, dann setzen wir uns mit Ihrem Bestatter in Verbindung und besprechen die nötigen Einzelheiten. Gern vermitteln wir Sie an Bestatter aus unserem umfassenden Netzwerk, die Ihre Wünsche unterstützen. Fragen Sie uns für alle Leistungen an.
               </AccordionItem>
-              <AccordionItem title="Nisi porta lorem mollis aliquam ut.">
-                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+              <AccordionItem title="Kann ich die Gedenkseite danach weiter nutzen?">
+                Ihnen steht die Gedenkseite kostenlos zur Verfügung, solange, bis Sie diese kündigen. Sie können den persönlichen Zugang zum größten und wichtigsten Gedenkportal kostenlos schon vor der Buchung bekommen und die Gedenkseite einrichten. Viele Funktionen stehen Ihnen hier zur Verfügung: Bilder, Videos, Kondolenzbuch, Gedenkkerzen, kleine Trauergeschenke und viel Platz für die Erinnerungen.
               </AccordionItem>
             </Accordion>
           </div>
         </GenericSection>
 
-        <Roadmap topDivider />
         <div className="spacer-64 spacer-24-mobile has-bg-color"></div>
-        <div className="spacer-24 has-bg-color"></div>        
+        <div className="spacer-24 has-bg-color"></div>
         <Cta hasBgColor invertColor topDivider bottomDivider split />
       </React.Fragment>
     );
@@ -214,9 +290,9 @@ class Secondary extends React.Component {
 }
 
 // inline style
-const formStyle = {
-  maxWidth: '420px',
-  margin: '0 auto'
-}
+// const formStyle = {
+//   maxWidth: '420px',
+//   margin: '0 auto'
+// }
 
 export default Secondary;

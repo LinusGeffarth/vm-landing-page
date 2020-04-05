@@ -4,11 +4,11 @@ import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 
 // Layouts
-import LayoutDefault from './layouts/LayoutDefault';
+// import LayoutDefault from './layouts/LayoutDefault';
 import LayoutAlternative from './layouts/LayoutAlternative';
 import LayoutSignin from './layouts/LayoutSignin';
 
-// Views 
+// Views
 import Home from './views/Home';
 import Secondary from './views/Secondary';
 import Login from './views/Login';
@@ -34,8 +34,8 @@ class App extends React.Component {
         ref="scrollReveal"
         children={() => (
           <Switch>
-            <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-            <AppRoute exact path="/secondary" component={Secondary} layout={LayoutAlternative} />
+            <AppRoute exact path="/" component={Home} layout={LayoutAlternative} />
+            <AppRoute exact path="/more-info" component={Secondary} layout={LayoutAlternative} />
             <AppRoute exact path="/login" component={Login} layout={LayoutSignin} />
             <AppRoute exact path="/signup" component={Signup} layout={LayoutSignin} />
           </Switch>

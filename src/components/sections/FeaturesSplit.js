@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+import Button from '../elements/Button';
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -59,22 +60,22 @@ class FeaturesSplit extends React.Component {
     };
 
     const items = [{
-      image: '',
-      title: 'Traditionelle Zeremonie',
+      image: 'zoom-screenshot',
+      title: 'Traditionelle Zeremonie – Online',
       subtitle: 'Mit Blumen, Rede, Kerzen, Bildern und Musik',
       text: 'Ein zertifizierter Trauerredner oder Trauerbegleiter Ihrer Wahl moderiert die Online-Gedenkfeier nach einem klaren Ablauf und über einen Online-Channel und kümmert sich verlässlich um alles Organisatorische – vor, während und nach Ihrem Zusammensein. '
     }, {
-      image: '',
+      image: 'gedenkseiten',
       title: 'Gedenkseite & Kondolenzbuch',
       subtitle: 'Damit Gedanken und Worte bleiben',
       text: 'Jede Online-Gedenkfeier erhält eine kostenlose Gedenkseite auf dem bedeutensten Online-Gedenkportal: mit Fotos und Videos des Verstorbenen, seinen Lebensdaten sowie dem Kondolenzbuch.\nDen Link zur Gedenkseite erhalten alle Trauergäste vorab. So können sie sich vor und nach der Online-Gedenkfeier dort eintragen. Aber auch während der Online-Gedenkfeier ist das möglich: per Chat an den Moderator, der Ihre Worte später ins Kondolenzbuch überträgt.'
     }, {
-      image: '',
+      image: 'trauer-cafe',
       title: 'Trauer-Café online',
       subtitle: 'So sind auch nach der Online-Gedenkfeier nicht allein',
       text: 'Nach der Online-Gedenkfeier beisammen sein, sich austauschen und einander stützen: Das ist für viele Trauergäste sehr wichtig, und im Online-Trauer-Café haben Sie dazu die Gelegenheit. Ihr Moderator aus der Online-Gedenkfeier begleitet Sie beim Austausch von Gedanken und Erinnerungen.'
     }, {
-      image: '',
+      image: 'sharing-links',
       title: 'Dokumentation der Gedenkfeier',
       subtitle: 'Wie wir Gedanken, Trost und Anteilnahme für Sie festhalten ',
       text: 'Ein Abschied ist ein einmaliger Moment. Doch nehmen die meisten Menschen diesen Moment nur benommen wahr. Aus diesem Grund sind im Nachhinein die Anteilnahme, die tröstenden Gedanken der anderen Trauergäste und das Teilen des Verlusts sehr wichtig. Um Ihnen das zugänglich zu machen, bieten wir Ihnen die Aufnahmen der Online-Gedenkfeier als Audio- und Video-Datei an, die Sie im Nachgang als Download-Link erhalten.'
@@ -85,12 +86,12 @@ class FeaturesSplit extends React.Component {
         {...props}
         className={outerClasses}
       >
-        <div className="container">
+        <div className="container" id="solution">
           <div className={innerClasses}>
             <SectionHeader data={sectionHeader} className="center-content" />
             <div className={splitClasses}>
 
-              {items.map(item =>
+              {items.map((item, i) =>
                 <div className="split-item">
                   <div className="split-item-content center-content-mobile">
                     <h3 className="mt-0 mb-16 reveal-from-left" data-reveal-container=".split-item">
@@ -115,17 +116,21 @@ class FeaturesSplit extends React.Component {
                       alt="Features split 01"
                       width={528}
                       height={396} />
-                    <div style={imgOddStyle}>
+                    <div style={i%2 === 0 ? imgEvenStyle : imgOddStyle}>
                       <Image
-                        src={require('./../../assets/images/features-split-top-01.png')}
+                        src={require('./../../assets/illustrations/' + item.image + '.png')}
                         alt="Features split top 01"
                         width={700}
-                        height={583} />
+                        height={583}
+                      />
                     </div>
                   </div>
                 </div>
               )}
+            </div>
 
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <Button tag="a" href="/more-info#moderators" color="dark" style={{ marginTop: 60 }} wideMobile>Moderatoren ansehen</Button>
             </div>
           </div>
         </div>
@@ -138,17 +143,17 @@ const imgOddStyle = {
   position: 'absolute',
   width: '132.57%',
   maxWidth: '132.57%',
-  top: '-20.2%',
+  top: '-3%',
   left: '-16.1%'
 }
 
-// const imgEvenStyle = {
-//   position: 'absolute',
-//   width: '132.57%',
-//   maxWidth: '132.57%',
-//   top: '-20.2%',
-//   left: '-16.6%'
-// }
+const imgEvenStyle = {
+  position: 'absolute',
+  width: '132.57%',
+  maxWidth: '132.57%',
+  top: '-3%',
+  left: '-16.6%'
+}
 
 FeaturesSplit.propTypes = propTypes;
 FeaturesSplit.defaultProps = defaultProps;

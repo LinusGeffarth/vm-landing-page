@@ -31,7 +31,7 @@ class HeroFull extends React.Component {
     const {
       className,
       topOuterDivider,
-      bottomOuterDivider,      
+      bottomOuterDivider,
       topDivider,
       bottomDivider,
       hasBgColor,
@@ -64,7 +64,7 @@ class HeroFull extends React.Component {
             <div className="hero-content">
               <div className="container-xs">
                 <h1 className="mt-0 reveal-from-left">
-                  Engage Your Visitors with a beautiful template
+                  So fühlt sich der Abschied  nicht so einsam an.
                 </h1>
               </div>
             </div>
@@ -73,7 +73,7 @@ class HeroFull extends React.Component {
                 data-video="https://player.vimeo.com/video/174002812"
                 href="#0"
                 aria-controls="video-modal"
-                onClick={this.openModal}
+                // onClick={this.openModal}
               >
                 <Image
                   className="has-shadow"
@@ -88,7 +88,7 @@ class HeroFull extends React.Component {
               show={this.state.videoModalActive}
               handleClose={this.closeModal}
               video="https://player.vimeo.com/video/174002812"
-              videoTag="iframe" /> 
+              videoTag="iframe" />
           </div>
         </div>
       </section>

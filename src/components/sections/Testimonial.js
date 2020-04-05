@@ -122,7 +122,7 @@ class Testimonial extends React.Component {
                   </div>
                   <div className="testimonial-item-content">
                     <p className="text-sm mb-0">
-                      Wir sind ein großes Bestattungsunternehmen. Durch die aktuelle Situation können wir keine Trauerfeiern durchführen. Für und und unsere Kunden ist die Online Gedenk- und Trauerfeier eine tolle Lösung. Und es bietet völig neue Möglichkeiten für die Zukunft.
+                      Wir sind ein großes Bestattungsunternehmen. Durch die aktuelle Situation können wir keine Trauerfeiern durchführen. Für uns und unsere Kunden ist die Online Gedenk- und Trauerfeier eine tolle Lösung. Und es bietet völig neue Möglichkeiten für die Zukunft.
                     </p>
                   </div>
                   <div className="testimonial-item-footer mt-24 mb-0 pt-24 has-top-divider">

@@ -14,7 +14,7 @@
 
 	.brand {
 		margin-right: $header-nav--padding-h;
-	}	
+	}
 }
 
 .site-header-inner {
@@ -74,7 +74,7 @@
 }
 
 .header-nav-right {
-	justify-content: flex-end;
+	justify-content: space-between;
 
 	+ .header-nav-right {
 		flex-grow: 0;

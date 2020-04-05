@@ -120,7 +120,7 @@ class Pricing extends React.Component {
         {...props}
         className={outerClasses}
       >
-        <div className="container">
+        <div className="container" id="pricing">
           <div className={innerClasses}>
             <SectionHeader data={sectionHeader} className="center-content" />
             {pricingSwitcher &&
@@ -185,7 +185,7 @@ class Pricing extends React.Component {
                     </div>
                   </div>
                   <div className="pricing-item-cta mb-8">
-                    <Button tag="a" color="primary" wide href="#">Angebot buchen</Button>
+                    <Button tag="a" color="primary" wide href={"mailto:office@trauerfeier.online,office@omilia.de?subject=Buchung Online-Gedenkfeier „Advanced”&body=Guten Tag,%0D%0A%0D%0AHiermit möchte ich eine Online-Gedenkfeier im Tarif ”Advanced” verbindlich buchen.%0D%0A%0D%0AHier sind meine Daten:%0D%0AName: %0D%0ATelefonnummer: %0D%0A%0D%0ABitte senden Sie mir ein Bestätigung für diese Buchung zu.%0D%0A%0D%0AVielen Dank."}>Angebot buchen</Button>
                   </div>
                 </div>
               </div>
@@ -223,8 +223,12 @@ class Pricing extends React.Component {
                     </div>
                   </div>
                   <div className="pricing-item-cta mb-8">
-                    <Button tag="a" color="primary" wide href="#">Kostenlos starten</Button>
+                    <Button tag="a" color="primary" wide href={"mailto:office@trauerfeier.online,office@omilia.de?subject=Buchung Online-Gedenkfeier „Basis-Produkt Online”&body=Guten Tag,%0D%0A%0D%0AHiermit möchte ich eine Online-Gedenkfeier im Tarif ”Basis-Produkt Online” verbindlich buchen.%0D%0A%0D%0AHier sind meine Daten:%0D%0AName: %0D%0ATelefonnummer: %0D%0A%0D%0ABitte senden Sie mir ein Bestätigung für diese Buchung zu.%0D%0A%0D%0AVielen Dank."}>Kostenlos starten</Button>
                   </div>
+                </div>
+
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                  <a href="/#features" className="pricing-more-info" wideMobile>Sie wollen mehr Details?</a>
                 </div>
               </div>
 
@@ -256,12 +260,12 @@ class Pricing extends React.Component {
                     </div>
                   </div>
                   <div className="pricing-item-cta mb-8">
-                    <Button tag="a" color="primary" wide href="#">individuelles Angebot ab 2.500 €</Button>
+                    <Button tag="a" color="primary" wide href={"mailto:office@trauerfeier.online,office@omilia.de?subject=Buchung Online-Gedenkfeier „Special Event”&body=Guten Tag,%0D%0A%0D%0AHiermit möchte ich eine Online-Gedenkfeier im Tarif ”Special Event” verbindlich buchen.%0D%0A%0D%0AHier sind meine Daten:%0D%0AName: %0D%0ATelefonnummer: %0D%0A%0D%0ABitte senden Sie mir ein Bestätigung für diese Buchung zu.%0D%0A%0D%0AVielen Dank."}>individuelles Angebot ab 2.500 €</Button>
                   </div>
                 </div>
               </div>
-
             </div>
+
           </div>
         </div>
       </section>

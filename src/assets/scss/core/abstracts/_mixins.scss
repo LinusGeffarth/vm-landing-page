@@ -175,13 +175,13 @@
 // $vpos: illustration is centered by default, allowed values: top or bottom
 // $hoffset: horizontal offset
 // $voffset: vertical offset
-@mixin illustration($file, $width, $height, $vpos: null, $hoffset: null, $voffset: null) {
+@mixin background($file, $width, $height, $vpos: null, $hoffset: null, $voffset: null) {
 	content: '';
 	position: absolute;
 	width: $width;
 	max-width: $width;
 	height: $height;
-	background-image: url(../../../images/#{$file});
+	background-image: url(../../../backgrounds/#{$file});
 	background-repeat: no-repeat;
 	@if( unit( $height ) == '%' ) {
 		background-size: contain;

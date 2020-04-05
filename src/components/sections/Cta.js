@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import Button from '../elements/Button';
+import Input from '../elements/Input';
 
 const propTypes = {
   ...SectionProps.types,
@@ -56,13 +57,19 @@ class Cta extends React.Component {
           >
             <div className="cta-slogan">
               <h3 className="m-0">
-                Sie haben spezielle Wünsche?
+                Sie wollen informiert bleiben?
               </h3>
             </div>
             <div className="cta-action">
-              <Button tag="a" color="secondary" wideMobile href="#0">
-                Kontakt aufnehmen
-              </Button>
+              <Input
+                type="email"
+                placeholder="Ihre E-Mail Adresse"
+                formGroup="desktop"
+                labelHidden
+                style={{ background: 'transparent', cornerRadius: 2, borderColor: '#91D4F8', color: 'white' }}
+              >
+                <Button color="secondary">im Newsletter anmelden</Button>
+              </Input>
             </div>
           </div>
         </div>

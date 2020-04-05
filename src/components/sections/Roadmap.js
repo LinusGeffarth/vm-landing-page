@@ -20,7 +20,7 @@ class Roadmap extends React.Component {
     const {
       className,
       topOuterDivider,
-      bottomOuterDivider,      
+      bottomOuterDivider,
       topDivider,
       bottomDivider,
       hasBgColor,
@@ -44,9 +44,17 @@ class Roadmap extends React.Component {
     );
 
     const sectionHeader = {
-      title: 'Product roadmap',
-      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      title: 'Ablauf der Organisation',
+      paragraph: 'Hier sehen Sie den einfachen Ablauf der Organisation einer Online-Gedenkfeier.'
     };
+
+    const steps = [
+      { title: 'Buchung', text: 'Wählen Sie ein Produkt und buchen Sie es. Die Buchung erfolgt verbindlich über das Online-Portal: Funeral-Market.place' },
+      { title: 'Details per Mail', text: 'Sie bekommen per E-Mail alle Details zu benötigten Informationen.' },
+      { title: 'Auswahl Moderator:in', text: 'Über ein Kontaktformular wählen Sie eine:n Moderator:in für Ihre Online Trauer- oder Gedenkfeier.' },
+      { title: 'Gespräch mit Moderator:in', text: 'Es setzt sich ein:e Moderator:in mit Ihnen in Verbindung, um alle Einzelheiten und Wünsche für die Feier sowie die Liste der Trauergäste zu besprechen.' },
+      { title: 'Einladung', text: 'Sie und alle Trauergäste erhalten per Mail die Einladung der zur Gedenk- oder Trauerfeier.' }
+    ]
 
     return (
       <section
@@ -57,21 +65,11 @@ class Roadmap extends React.Component {
           <div className={innerClasses}>
             <SectionHeader data={sectionHeader} className="center-content" />
             <Timeline>
-              <TimelineItem title="November 2019">
-                Deployed a high-quality first release and conducted a market validation test
-              </TimelineItem>
-              <TimelineItem title="December 2019">
-                Deployed a high-quality first release and conducted a market validation test
-              </TimelineItem>
-              <TimelineItem title="January 2020">
-                Deployed a high-quality first release and conducted a market validation test
-              </TimelineItem>
-              <TimelineItem title="February 2020">
-                Deployed a high-quality first release and conducted a market validation test
-              </TimelineItem>
-              <TimelineItem title="March 2020">
-                Deployed a high-quality first release and conducted a market validation test
-              </TimelineItem>
+              {steps.map((step, i) => (
+                <TimelineItem title={(i+1) + '. ' + step.title}>
+                  {step.text}
+                </TimelineItem>
+              ))}
             </Timeline>
           </div>
         </div>

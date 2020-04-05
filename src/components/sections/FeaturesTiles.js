@@ -77,10 +77,10 @@ class FeaturesTiles extends React.Component {
       icon: 'support',
       title: 'Service & Support',
       text: 'Nach der Buchung Ihrer  Online-Gedenkfeier erhalten Sie und alle Teilnehmer Informationen zur Handhabung. '
-    }, {
-      icon: 'live',
-      title: 'Live-Streaming (geplant)',
-      text: 'Live-Bilder von der Urne oder dem Sarg werden vom Bestatter oder einem Kamerateam während der Beisetzung in die Online-Gedenkfeier eingespielt.'
+    // }, {
+    //   icon: 'live',
+    //   title: 'Live-Streaming (geplant)',
+    //   text: 'Live-Bilder von der Urne oder dem Sarg werden vom Bestatter oder einem Kamerateam während der Beisetzung in die Online-Gedenkfeier eingespielt.'
     }];
 
     return (
@@ -88,7 +88,7 @@ class FeaturesTiles extends React.Component {
         {...props}
         className={outerClasses}
       >
-        <div className="container">
+        <div className="container" id="features">
           <div className={innerClasses}>
             <SectionHeader data={sectionHeader} className="center-content" />
             <div className={tilesClasses}>

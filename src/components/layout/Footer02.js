@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Logo from './partials/Logo';
 import FooterNav from './partials/FooterNav';
-import FooterSocial from './partials/FooterSocial';
+// import FooterSocial from './partials/FooterSocial';
 
 const propTypes = {
   topOuterDivider: PropTypes.bool,
@@ -16,6 +16,10 @@ const defaultProps = {
 }
 
 class Footer extends React.Component {
+
+  state = {
+    isModalOpen: false
+  }
 
   render() {
     const {
@@ -46,9 +50,9 @@ class Footer extends React.Component {
               <div className="footer-blocks">
                 <div className="footer-block">
                   <Logo className="mb-16" />
-                  <div className="footer-copyright">&copy; 2020 Sienna, all rights reserved</div>
+                  <div className="footer-copyright">&copy; 2020 CONVELA, all rights reserved – in cooperation with Omilia</div>
                 </div>
-                <div className="footer-block">
+                {/* <div className="footer-block">
                   <div className="footer-block-title">Company</div>
                   <ul className="list-reset mb-0">
                     <li>
@@ -64,46 +68,34 @@ class Footer extends React.Component {
                       <a href="https://cruip.com/">Be on design</a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
                 <div className="footer-block">
-                  <div className="footer-block-title">Uses cases</div>
+                  <div className="footer-block-title">Technisches</div>
                   <ul className="list-reset mb-0">
                     <li>
-                      <a href="https://cruip.com/">Consectetur adipiscing</a>
+                      <a href="https://support.zoom.us/hc/de/articles/201362193-Wie-nehme-ich-an-einem-Meeting-teil" target="_blank" rel="noopener noreferrer">Wie nehme ich an einem Meeting teil?</a>
                     </li>
                     <li>
-                      <a href="https://cruip.com/">Lorem Ipsum is place</a>
-                    </li>
-                    <li>
-                      <a href="https://cruip.com/">Excepteur sint</a>
-                    </li>
-                    <li>
-                      <a href="https://cruip.com/">Occaecat cupidatat</a>
+                      <a href="https://zoom.us/test" target="_blank" rel="noopener noreferrer">Wie teste ich meine Technik?</a>
                     </li>
                   </ul>
                 </div>
                 <div className="footer-block">
-                  <div className="footer-block-title">Docs</div>
+                  <div className="footer-block-title">Formulare</div>
                   <ul className="list-reset mb-0">
                     <li>
-                      <a href="https://cruip.com/">The purpose of lorem</a>
+                      <a href="https://form.jotform.com/200956132251043" target="_blank" rel="noopener noreferrer">Auswahl des Moderators</a>
                     </li>
                     <li>
-                      <a href="https://cruip.com/">Dummy text used</a>
-                    </li>
-                    <li>
-                      <a href="https://cruip.com/">Excepteur sint</a>
-                    </li>
-                    <li>
-                      <a href="https://cruip.com/">Occaecat cupidatat</a>
+                      <a href="/">Infos für Moderatoren</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div className="footer-bottom space-between center-content-mobile text-xxs">
-              <FooterNav />
-              <FooterSocial />
+              <FooterNav isModalOpen={this.state.isModalOpen} openModal={() => this.setState({ isModalOpen: true })} closeModal={() => this.setState({ isModalOpen: false })} />
+              {/* <FooterSocial /> */}
             </div>
           </div>
         </div>

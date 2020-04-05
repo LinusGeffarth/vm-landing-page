@@ -102,7 +102,7 @@ class Header extends React.Component {
                   className="header-nav-toggle"
                   onClick={this.state.isActive ? this.closeMenu : this.openMenu}
                 >
-                  <span className="screen-reader">Menu</span>
+                  <span className="screen-reader">Menü</span>
                   <span className="hamburger">
                     <span className="hamburger-inner"></span>
                   </span>
@@ -114,14 +114,17 @@ class Header extends React.Component {
                       'header-nav reveal-from-right',
                       this.state.isActive && 'is-active'
                     )}>
-                  {/* <div className="header-nav-inner">
+                  <div className="header-nav-inner">
                     <ul className={
                       classNames(
                         'list-reset text-xxs',
                         navPosition && `header-nav-${navPosition}`
                       )}>
                       <li>
-                        <Link to="/secondary/" onClick={this.closeMenu}>Secondary page</Link>
+                        <Link className="button button-light button-wide-mobile button-sm" to="/" onClick={this.closeMenu}>Home</Link>
+                      </li>
+                      <li>
+                        <Link className="button button-dark button-wide-mobile button-sm" to="/more-info" onClick={this.closeMenu}>Weitere Informationen</Link>
                       </li>
                     </ul>
                     {!hideSignin &&
@@ -129,10 +132,18 @@ class Header extends React.Component {
                         className="list-reset header-nav-right"
                       >
                         <li>
-                          <Link to="/signup/" className="button button-dark button-wide-mobile button-sm" onClick={this.closeMenu}>Sign up</Link>
+                          <a
+                            className="button button-light button-wide-mobile button-sm"
+                            href="https://app.funeral-market.place/login/signup-as-private-customer"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={this.closeMenu}
+                          >
+                            Anmelden
+                          </a>
                         </li>
                       </ul>}
-                  </div> */}
+                  </div>
                 </nav>
               </React.Fragment>}
           </div>

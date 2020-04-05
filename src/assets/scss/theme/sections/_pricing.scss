@@ -40,6 +40,18 @@
 			}
 		}
 	}
+
+	&-more-info {
+		margin-top: 60px;
+		color: #919EB7 !important;
+		font-size: 15px;
+		text-decoration: none !important;
+		transition: all .15s ease-out;
+
+		&:hover {
+			color: #E7EBF6 !important;
+		}
+	}
 }
 
 .pricing-item-header {
