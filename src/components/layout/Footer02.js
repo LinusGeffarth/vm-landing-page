@@ -59,9 +59,9 @@ class Footer extends React.Component {
                     <li>
                       <Link to="/imprint">Impressum</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/terms">AGB</Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link to="/privacy">Datenschutz</Link>
                     </li>
