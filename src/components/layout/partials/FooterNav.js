@@ -27,7 +27,7 @@ const FooterNav = ({
           <a href="mailto:office@trauerfeier.online">Kontakt</a>
         </li>
         <li>
-          <Link to="/more-info#faq">FAQ's</Link>
+          <Link to="/more-info#faq">FAQ</Link>
         </li>
         <li>
           <Modal

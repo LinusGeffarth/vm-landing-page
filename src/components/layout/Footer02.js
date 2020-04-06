@@ -59,9 +59,9 @@ class Footer extends React.Component {
                     <li>
                       <Link to="/imprint">Impressum</Link>
                     </li>
-                    {/* <li>
+                    <li>
                       <Link to="/terms">AGB</Link>
-                    </li> */}
+                    </li>
                     <li>
                       <Link to="/privacy">Datenschutz</Link>
                     </li>
@@ -85,7 +85,7 @@ class Footer extends React.Component {
                       <a href="https://form.jotform.com/200956132251043" target="_blank" rel="noopener noreferrer">Auswahl des Moderators</a>
                     </li>
                     <li>
-                      <a href="/">Infos für Moderatoren</a>
+                      <a href="https://form.jotform.com/200964170187052" target="_blank" rel="noopener noreferrer">Infos für Moderatoren</a>
                     </li>
                   </ul>
                 </div>

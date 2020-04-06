@@ -50,7 +50,7 @@ class FeaturesTiles extends React.Component {
 
     const sectionHeader = {
       title: 'Für alles ist gesorgt',
-      paragraph: 'Professionell moderiert, ausgestattet und organisiert – von Mecklenburg-Vorpommern bis Bayern.'
+      paragraph: 'Professionell moderiert, ausgestattet und organisiert – von Schleswig-Holstein bis Bayern.'
     };
 
     const items = [{
@@ -60,15 +60,15 @@ class FeaturesTiles extends React.Component {
     }, {
       icon: 'moderator',
       title: 'Professionelle Moderation',
-      text: 'Ein zertifizierter Trauerredner oder Trauerbegleiter moderiert verlässlich alles vor, während und nach der Online-Gedenkfeier.'
+      text: 'Ein:e zertifizierte:r Trauerredner:in oder Trauerbegleiter:in moderiert verlässlich alles vor, während und nach der Online-Gedenkfeier.'
     }, {
       icon: 'speaker',
-      title: 'Trauerredner online',
-      text: 'Ein zertifizierter Trauerredner setzt sich mit Ihnen in Verbindung, um die Trauerrede zu entwickeln und trägt diese in der Online-Gedenkfeier vor.'
+      title: 'Trauerreden online',
+      text: 'Ein:e zertifizierte:r Trauerredner:in setzt sich mit Ihnen in Verbindung, um die Trauerrede zu entwickeln, und trägt diese in der Online-Gedenkfeier vor.'
     }, {
       icon: 'musician',
-      title: 'Tauermusiker online',
-      text: 'Auf Wunsch begleitet ein professioneller Trauermusiker Ihre Online-Gedenkfeier mit der Musik Ihrer Wahl.'
+      title: 'Trauermusik online',
+      text: 'Auf Wunsch begleitet ein:e professionelle:r Trauermusiker:in Ihre Online-Gedenkfeier mit der Musik Ihrer Wahl.'
     }, {
       icon: 'video',
       title: 'Feier-Dokumentation',
@@ -76,7 +76,7 @@ class FeaturesTiles extends React.Component {
     }, {
       icon: 'support',
       title: 'Service & Support',
-      text: 'Nach der Buchung Ihrer  Online-Gedenkfeier erhalten Sie und alle Teilnehmer Informationen zur Handhabung. '
+      text: 'Nach der Buchung Ihrer  Online-Gedenkfeier erhalten Sie und alle Teilnehmenden Informationen zur Handhabung. '
     // }, {
     //   icon: 'live',
     //   title: 'Live-Streaming (geplant)',

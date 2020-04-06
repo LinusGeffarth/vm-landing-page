@@ -62,6 +62,29 @@
 
 .pricing-item-header {
 	@include divider(after);
+	position: relative;
+}
+
+$size: 150px;
+.pricing-item-covid-banner {
+	position: absolute;
+	top: -80px;
+	right: -57px;
+	background: linear-gradient(225deg, rgba(152,121,159,1) 0%, rgba(140,57,91,1) 100%);
+	color: white;
+	width: $size;
+	height: $size;
+	border-radius: $size/2;
+	box-shadow: 0 32px 88px rgba(get-color(dark, 1), .32);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	transform: scale(0.8);
+
+	& > span {
+		transform: rotate(12deg);
+	}
 }
 
 .pricing-item-header-title-secondary {
@@ -118,7 +141,13 @@ ul.pricing-item-features-list {
 				height: 200px;
 			}
 		}
-    }
+	}
+
+	.pricing-item-covid-banner {
+		top: -100px;
+		right: -100px;
+		transform: scale(1);
+	}
 }
 
 @include media( '>1145px' ) { // 1145px may need to be adjusted if pricing items width or outer padding change

@@ -181,7 +181,7 @@ class Secondary extends React.Component {
             <div className="container-xs">
               <SectionHeader data={faqSectionHeader} className="center-content" />
               <Accordion>
-                <AccordionItem title="Wie verläuft eine Online Gedenkfeier?" active>
+                <AccordionItem title="Wie verläuft eine Online-Gedenkfeier?" active>
                   <b>Die Zeremonie</b><br />
                   Zum vereinbarten Termin - Datum und Uhrzeit - eröffnet die Moderatorin / der Moderator den virtuellen Raum für die Gedenk- oder Trauerfeier für alle eingeladenen Trauergäste.<br />
                   Sie oder er begrüßt alle Trauergäste und beginnt die 30-minütige Gedenk- oder Trauerfeier mit Fotos, Musik und persönlichen Worten, ganz so, wie es mit den Angehörigen im Vorfeld genau besprochen wurde.<br />
@@ -189,23 +189,22 @@ class Secondary extends React.Component {
                 </AccordionItem>
                 <AccordionItem title="Welche technischen Voraussetzungen und Kenntnisse muss ich haben?">
                   <b>Im Vorfeld</b><br />
-                  Alle Trauergäste bekommen per E-Mail eine persönliche Einladung mit den nötigen Zugangsdaten für den online Konferenzraum.<br />
-                  Der virtuelle Raum für die Online Gedenk-oder Trauerfeier kann über einen Computer, ein Tablet oder ein Smartphone benutzt werden.<br />
-                  Es sollte eine mittelmäßig bis gute Kamera am Gerät sein.<br />
-                  Für ein gutes Bild wäre es sinnvoll, wenn das Gerät während der Feier feststeht oder liegt, damit wacklige Bilder vermieden werden.<br />
-                  Außerdem sorgt ein Headset mit Mikrofon-funktion meistens für eine bessere Tonqualität.<br />
-                  Alle Gäste sollten mindestens 15 Minuten vor Beginn der Online-Trauerfeier im online „Warteraum“ sein und die Internetverbindung sowie Ton- und Bildqualität zu testen. Wenn Sie dafür technische Unterstützung wünschen, buchen Sie diesen Service für sich und Ihre Trauergäste.
+                  Alle Trauergäste bekommen per E-Mail eine persönliche Einladung mit den nötigen Zugangsdaten für den Online-Konferenzraum.<br />
+                  Der virtuelle Raum für die Online-Gedenk- oder Trauerfeier kann über einen Computer, ein Tablet oder ein Smartphone genutzt werden.<br />
+                  Das Gerät sollte über eine mittelmäßige bis gute Kamera verfügen. Für ein gutes Bild wäre es sinnvoll, wenn das Gerät während der Feier fest steht oder liegt, damit wacklige Bilder vermieden werden.<br />
+                  Außerdem sorgt ein Headset mit Mikrofonfunktion meist für eine bessere Tonqualität.<br />
+                  Alle Gäste sollten wenigstens 15 Minuten vor Beginn der Online-Trauerfeier im Online-„Warteraum“ sein, um die Internetverbindung sowie Ton- und Bildqualität zu testen. Wenn Sie dafür technische Unterstützung wünschen, buchen Sie diesen Service für sich und Ihre Trauergäste.
                 </AccordionItem>
-                <AccordionItem title="Was ist ein Online Trauer-Café?">
-                  Während die Zeremonie einem festen Ablauf folgt und damit einen offizielleren Charakter hat, ist das 30-minütige „Trauer-Café“ für den lockereren Austausch von Gedanken, Erinnerungen, Bildern. Es kann eine Unterhaltung entstehen; es können Anekdoten erzählt werden und natürlich können die Trauergäste gemeinsam singen und musizieren. Hier moderiert der Trauerfeier-Moderator zurückhaltend und stellt die ein gutes Gesprächsklima her.<br />
-                  Spontane Entwicklungen sind gewünscht; ggf. kann die Dauer auch verlängert werden.
+                <AccordionItem title="Was ist ein Online Trauercafé?">
+                  Während die Zeremonie einem festen Ablauf folgt und damit einen verbindlicheren Charakter hat, ist das 30-minütige „Trauercafé“ für den lockeren Austausch von Gedanken, Erinnerungen, Bildern gedacht. So kann eine Unterhaltung entstehen: Es können Anekdoten erzählt werden, und natürlich können die Trauergäste gemeinsam singen und musizieren. Hier moderiert die Moderatorin / der Moderator zurückhaltend und stellt vor allem ein gutes Gesprächsklima her.<br />
+                  Spontane Entwicklungen sind erwünscht, und ggf. kann die Dauer auch verlängert werden.
                 </AccordionItem>
                 <AccordionItem title="Brauche ich einen Bestatter?">
                   <b>Nein</b>, Sie brauchen keinen Bestatter.<br />
-                  Für eine Online Gedenkfeier benötigen Sie keinen Bestatter. Wenn Sie eine Online-Trauerfeier wünschen, dann setzen wir uns mit Ihrem Bestatter in Verbindung und besprechen die nötigen Einzelheiten. Gern vermitteln wir Sie an Bestatter aus unserem umfassenden Netzwerk, die Ihre Wünsche unterstützen. Fragen Sie uns für alle Leistungen an.
+                  Für eine Online-Gedenkfeier benötigen Sie keinen Bestatter. Wenn Sie eine Online-Trauerfeier wünschen, dann setzen wir uns mit Ihrem Bestatter in Verbindung und besprechen die nötigen Einzelheiten. Gern vermitteln wir Sie an Bestatter aus unserem umfassenden Netzwerk, die Ihre Wünsche unterstützen. Fragen Sie uns für alle Leistungen an.
                 </AccordionItem>
                 <AccordionItem title="Kann ich die Gedenkseite danach weiter nutzen?">
-                  Ihnen steht die Gedenkseite kostenlos zur Verfügung, solange, bis Sie diese kündigen. Sie können den persönlichen Zugang zum größten und wichtigsten Gedenkportal kostenlos schon vor der Buchung bekommen und die Gedenkseite einrichten. Viele Funktionen stehen Ihnen hier zur Verfügung: Bilder, Videos, Kondolenzbuch, Gedenkkerzen, kleine Trauergeschenke und viel Platz für die Erinnerungen.
+                  Ihnen steht die Gedenkseite kostenlos zur Verfügung, solange, bis Sie diese kündigen. Sie können den persönlichen Zugang zum größten und wichtigsten Gedenkportal kostenlos schon vor der Buchung bekommen und die Gedenkseite einrichten. Viele Funktionen stehen Ihnen hier zur Verfügung: Bilder, Videos, Kondolenzbuch, Gedenkkerzen, kleine Trauergeschenke und viel Platz für Ihre persönlichen Erinnerungen.
                 </AccordionItem>
               </Accordion>
             </div>

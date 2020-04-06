@@ -76,7 +76,7 @@ class Testimonial extends React.Component {
                   </div>
                   <div className="testimonial-item-content">
                     <p className="text-sm mb-0">
-                      Unser Freund Tobi hätte es cool gefunden. Über 40 Kumpels im Channel. Trauer Cafe um 23 Uhr? Ging! Klar waren alle traurig, aber mit unerer  Musik konnten wir so feiern, wie wir uns den Abschied vorstellen, zu der Uhrzeit, an der immer unsere Party geht.
+                      Unser Freund Tobi hätte es cool gefunden. Über 40 Kumpels im Channel. Trauercafé um 23 Uhr? Ging! Klar waren alle traurig, aber mit unserer  Musik konnten wir so feiern, wie wir uns den Abschied vorstellen, zu der Uhrzeit, an der immer unsere Party geht.
                     </p>
                   </div>
                   <div className="testimonial-item-footer mt-24 mb-0 pt-24 has-top-divider">
@@ -99,7 +99,7 @@ class Testimonial extends React.Component {
                   </div>
                   <div className="testimonial-item-content">
                     <p className="text-sm mb-0">
-                      Meine Mutter ist in diesen unwirklichen Zeiten gestorben. Ich hatte erst Zweifel, aber die online Trauerfeier war ein tolles Erlebnis und sogar eine angemessene Abschiedsfeier. Meiner Mutter hätte es gefallen. Und ich bin überaus dankbar dafür.
+                      Meine Mutter ist in diesen unwirklichen Zeiten gestorben. Ich hatte erst Zweifel, aber die Online-Trauerfeier war ein tolles Erlebnis und sogar eine angemessene Abschiedsfeier. Meiner Mutter hätte es gefallen. Und ich bin überaus dankbar dafür.
                     </p>
                   </div>
                   <div className="testimonial-item-footer mt-24 mb-0 pt-24 has-top-divider">
@@ -122,7 +122,7 @@ class Testimonial extends React.Component {
                   </div>
                   <div className="testimonial-item-content">
                     <p className="text-sm mb-0">
-                      Wir sind ein großes Bestattungsunternehmen. Durch die aktuelle Situation können wir keine Trauerfeiern durchführen. Für uns und unsere Kunden ist die Online Gedenk- und Trauerfeier eine tolle Lösung. Und es bietet völig neue Möglichkeiten für die Zukunft.
+                      Wir sind ein großes Bestattungsunternehmen. Durch die aktuelle Situation können wir keine Trauerfeiern durchführen. Für uns und unsere Kunden ist die Online-Gedenk- und Trauerfeier eine tolle Lösung. Und sie bietet völlig neue Möglichkeiten für die Zukunft.
                     </p>
                   </div>
                   <div className="testimonial-item-footer mt-24 mb-0 pt-24 has-top-divider">

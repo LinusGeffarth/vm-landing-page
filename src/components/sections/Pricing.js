@@ -178,8 +178,8 @@ class Pricing extends React.Component {
                         <li className="is-checked">30 Min. moderierte Gedenkfeier</li>
                         <li className="is-checked">Live-Streaming der Urne/Sarg</li>
                         <li className="is-checked">Trauerrede ONLINE</li>
-                        <li className="is-checked">30 Min. moderiertes Trauer-Café</li>
-                        <li className="is-checked">Gedenkseite {'&'} Kondolenzbuch</li>
+                        <li className="is-checked">30 Min. moderiertes Trauercafé</li>
+                        <li className="is-checked">Gedenkseite {'&'} digitales Kondolenzbuch</li>
                         <li className="is-checked">Mitschnitt der Gedenkfeier</li>
                         <li>Live-Musik ONLINE (zubuchbar)</li>
                       </ul>
@@ -195,6 +195,13 @@ class Pricing extends React.Component {
                 <div className="tiles-item-inner has-shadow">
                   <div className="pricing-item-content">
                     <div className="pricing-item-header pb-16 mb-24">
+                      <div className="pricing-item-covid-banner">
+                        <span style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                          <span className="text-sm"><b>kostenloser</b></span>
+                          <span className="text-xs">Service während</span>
+                          <span className="text-sm">#COVID19</span>
+                        </span>
+                      </div>
                       <div className="pricing-item-price">
                         <span className="pricing-item-price-amount h1">
                           Gedenkfeier
@@ -215,8 +222,8 @@ class Pricing extends React.Component {
                       </div>
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
                         <li className="is-checked">30 Min. Zeremonie</li>
-                        <li className="is-checked">30 Min. moderiertes Trauer-Café</li>
-                        <li className="is-checked">Gedenkseite {'&'} Kondolenzbuch</li>
+                        <li className="is-checked">30 Min. moderiertes Trauercafé</li>
+                        <li className="is-checked">Gedenkseite {'&'} digitales Kondolenzbuch</li>
                         <li className="is-checked">Mitschnitt der Gedenkfeier</li>
                         <li>Trauerrede ONLINE (zubuchbar)</li>
                         <li>Live-Musik ONLINE (zubuchbar)</li>
@@ -251,7 +258,7 @@ class Pricing extends React.Component {
                         <li className="is-checked">Open Event Channel</li>
                         <li className="is-checked">Redner {'&'} Musik an Urne/Sarg</li>
                         <li className="is-checked">Special Places für Urne/Sarg</li>
-                        <li className="is-checked">professionelles Kamerateam</li>
+                        <li className="is-checked">Professionelles Kamerateam</li>
                         <li className="is-checked">Live-Streaming</li>
                       </ul>
                     </div>
@@ -265,7 +272,7 @@ class Pricing extends React.Component {
 
             <div className="pricing-more-info-container">
               <HashLink to="/#features" className="pricing-more-info">
-                Sie wollen mehr Details?
+                Sie möchten mehr Details?
               </HashLink>
             </div>
 

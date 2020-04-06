@@ -10,7 +10,7 @@ class Imprint extends React.Component {
 
         <GenericSection>
           <div className="container-sm text-xs">
-            <h1 className="mt-0 mb-0">Impressum</h1>
+            <h1 className="mb-0">Impressum</h1>
             <h4>Verantwortlich für diese Seite gemäß §5 TMG</h4>
             <p>
               <b>CONVELA GmbH</b><br />

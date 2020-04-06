@@ -57,7 +57,7 @@ class Cta extends React.Component {
           >
             <div className="cta-slogan">
               <h3 className="m-0">
-                Sie wollen informiert bleiben?
+                Sie möchten informiert bleiben?
               </h3>
             </div>
             <div className="cta-action">
@@ -68,7 +68,7 @@ class Cta extends React.Component {
                 labelHidden
                 style={{ background: 'transparent', cornerRadius: 2, borderColor: '#91D4F8', color: 'white' }}
               >
-                <Button color="secondary">im Newsletter anmelden</Button>
+                <Button color="secondary">zum Newsletter anmelden</Button>
               </Input>
             </div>
           </div>

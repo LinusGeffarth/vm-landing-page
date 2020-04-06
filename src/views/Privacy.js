@@ -9,7 +9,7 @@ class Privacy extends React.Component {
 
         <GenericSection>
           <div className="container-sm text-xs">
-            <h1 className="mt-0 mb-0">Datenschutzerklärung</h1>
+            <h1 className="mb-0">Datenschutzerklärung</h1>
             <h5>
               I. NAME UND ANSCHRIFT DES VERANTWORTLICHEN
             </h5>
