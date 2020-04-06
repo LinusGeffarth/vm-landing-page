@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
-import Button from '../elements/Button';
+import HashLink from '../elements/HashLink';
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -130,7 +130,9 @@ class FeaturesSplit extends React.Component {
             </div>
 
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <Button tag="a" href="/more-info#moderators" color="dark" style={{ marginTop: 60 }} wideMobile>Moderatoren ansehen</Button>
+              <HashLink to="/more-info#moderators" className="button button-dark" style={{ marginTop: 60 }}>
+                Moderatoren ansehen
+              </HashLink>
             </div>
           </div>
         </div>

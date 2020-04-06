@@ -56,7 +56,7 @@ class FeaturesTiles extends React.Component {
     const items = [{
       icon: 'rituals',
       title: 'Rituale online zelebrieren',
-      text: 'Blumen nierderlegen, Kerzen anzünden, gemeinsam singen, Gebete sprechen, Bilder und Erinnerungen austauschen ist bei uns auch online möglich.'
+      text: 'Blumen niederlegen, Kerzen anzünden, gemeinsam singen, Gebete sprechen, Bilder und Erinnerungen austauschen ist bei uns auch online möglich.'
     }, {
       icon: 'moderator',
       title: 'Professionelle Moderation',

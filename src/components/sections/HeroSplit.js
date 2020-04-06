@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
-import Button from '../elements/Button';
 import Image from '../elements/Image';
 import { Link } from 'react-router-dom';
+import HashLink from '../elements/HashLink';
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -71,9 +71,9 @@ class HeroSplit extends React.Component {
                   Mit der Online-Gedenkfeier eröffnen wir Ihnen und Ihren Angehörigen die Möglichkeit, zusammen zu sein und einander zu stützen: per Video – professionell moderiert.
                   </p>
                   <div className="reveal-from-left" data-reveal-delay="450">
-                    <Button tag="a" color="primary" href="#pricing" wideMobile>
+                    <HashLink to="/#pricing" className="button button-primary">
                       Unsere Angebote
-                    </Button>
+                    </HashLink>
                   </div>
                 </div>
                 <div className="hero-figure is-3d split-item-image illustration-element-01">

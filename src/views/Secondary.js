@@ -1,20 +1,14 @@
 import React from 'react';
-// import section header
 import SectionHeader from '../components/sections/partials/SectionHeader';
-// import sections
 import HeroFull from '../components/sections/HeroFull';
 import Team from '../components/sections/Team';
 import GenericSection from '../components/sections/GenericSection';
 import Roadmap from '../components/sections/Roadmap';
 import Cta from '../components/sections/Cta';
-// import some required elements
 import Image from '../components/elements/Image';
-// import Input from '../components/elements/Input';
-// import ButtonGroup from '../components/elements/ButtonGroup';
-import Button from '../components/elements/Button';
-// import Modal from '../components/elements/Modal';
 import Accordion from '../components/elements/Accordion';
 import AccordionItem from '../components/elements/AccordionItem';
+import HashLink from '../components/elements/HashLink';
 
 const scrollTo = (ref) => {
   if (!ref || !ref.current) { return; }
@@ -141,7 +135,7 @@ class Secondary extends React.Component {
                 </p>
                 <h5>Nordrhein-Westfalen</h5>
                 <p>
-                  Trauerfeiern und -gottesdienste auch in Trauerhallen und Kirchen, teilweise strengere Regelungen in einzelnen Kommunen 
+                  Trauerfeiern und -gottesdienste auch in Trauerhallen und Kirchen, teilweise strengere Regelungen in einzelnen Kommunen
                 </p>
                 <h5>Rheinland-Pfalz</h5>
                 <p>
@@ -153,7 +147,7 @@ class Secondary extends React.Component {
                 </p>
                 <h5>Sachsen</h5>
                 <p>
-                  Im Freien mit bis zu 15 engen Angehörigen und einer seelsorgerischen Begleitung  
+                  Im Freien mit bis zu 15 engen Angehörigen und einer seelsorgerischen Begleitung
                 </p>
                 <h5>Sachsen-Anhalt</h5>
                 <p>
@@ -176,7 +170,9 @@ class Secondary extends React.Component {
           </div>
 
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <Button tag="a" href="/#solution" color="dark" style={{ marginTop: 60 }} wideMobile>zur Online-Lösung</Button>
+            <HashLink to="/#solution" className="button button-dark" style={{ marginTop: 60 }}>
+              zur Online-Lösung
+            </HashLink>
           </div>
         </GenericSection>
 
@@ -224,10 +220,5 @@ class Secondary extends React.Component {
   }
 }
 
-// inline style
-// const formStyle = {
-//   maxWidth: '420px',
-//   margin: '0 auto'
-// }
 
 export default Secondary;

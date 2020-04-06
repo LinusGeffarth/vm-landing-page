@@ -19,6 +19,10 @@
     white-space: nowrap;
 	transition: background .15s ease;
 
+	&:focus {
+		outline: none;
+	}
+
     &:active {
         outline: 0;
     }

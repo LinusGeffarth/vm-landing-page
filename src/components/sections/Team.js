@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
-import Button from '../elements/Button';
+import HashLink from '../elements/HashLink';
 import Image from '../elements/Image';
 
 const propTypes = {
@@ -118,7 +118,9 @@ class Team extends React.Component {
               )}
             </div>
 
-            <Button tag="a" href="/#pricing" color="primary" style={{ marginTop: 50 }} wideMobile>zu unseren Angeboten</Button>
+            <HashLink to="/#pricing" className="button button-primary" style={{ marginTop: 50 }}>
+              zu unseren Angeboten
+            </HashLink>
           </div>
         </div>
       </section>

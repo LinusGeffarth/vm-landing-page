@@ -5,6 +5,7 @@ import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Switch from '../elements/Switch';
 import Button from '../elements/Button';
+import HashLink from '../elements/HashLink';
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -217,7 +218,7 @@ class Pricing extends React.Component {
                         <li className="is-checked">30 Min. moderiertes Trauer-Café</li>
                         <li className="is-checked">Gedenkseite {'&'} Kondolenzbuch</li>
                         <li className="is-checked">Mitschnitt der Gedenkfeier</li>
-                        <li>Trauerrede ONLINE</li>
+                        <li>Trauerrede ONLINE (zubuchbar)</li>
                         <li>Live-Musik ONLINE (zubuchbar)</li>
                       </ul>
                     </div>
@@ -228,7 +229,9 @@ class Pricing extends React.Component {
                 </div>
 
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                  <a href="/#features" className="pricing-more-info" wideMobile>Sie wollen mehr Details?</a>
+                  <HashLink to="/#features" className="pricing-more-info">
+                    Sie wollen mehr Details?
+                  </HashLink>
                 </div>
               </div>
 
