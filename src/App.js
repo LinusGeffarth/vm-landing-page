@@ -2,17 +2,21 @@ import React from 'react';
 import { withRouter, Switch } from 'react-router-dom';
 import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
+import ScrollToTop from './utils/ScrollToTop';
 
 // Layouts
 // import LayoutDefault from './layouts/LayoutDefault';
 import LayoutAlternative from './layouts/LayoutAlternative';
-import LayoutSignin from './layouts/LayoutSignin';
+// import LayoutSignin from './layouts/LayoutSignin';
 
 // Views
 import Home from './views/Home';
 import Secondary from './views/Secondary';
-import Login from './views/Login';
-import Signup from './views/Signup';
+import Imprint from './views/Imprint';
+import Terms from './views/Terms';
+import Privacy from './views/Privacy';
+// import Login from './views/Login';
+// import Signup from './views/Signup';
 
 class App extends React.Component {
 
@@ -33,13 +37,19 @@ class App extends React.Component {
       <ScrollReveal
         ref="scrollReveal"
         children={() => (
-          <Switch>
-            <AppRoute exact path="/" component={Home} layout={LayoutAlternative} />
-            <AppRoute exact path="/more-info" component={Secondary} layout={LayoutAlternative} />
-            <AppRoute exact path="/login" component={Login} layout={LayoutSignin} />
-            <AppRoute exact path="/signup" component={Signup} layout={LayoutSignin} />
-          </Switch>
-        )} />
+          <>
+            <ScrollToTop />
+            <Switch>
+              <AppRoute exact path="/" component={Home} layout={LayoutAlternative} />
+              <AppRoute exact path="/more-info" component={Secondary} layout={LayoutAlternative} />
+              <AppRoute exact path="/imprint" component={Imprint} layout={LayoutAlternative} />
+              <AppRoute exact path="/terms" component={Terms} layout={LayoutAlternative} />
+              <AppRoute exact path="/privacy" component={Privacy} layout={LayoutAlternative} />
+              {/* <AppRoute exact path="/login" component={Login} layout={LayoutSignin} />
+              <AppRoute exact path="/signup" component={Signup} layout={LayoutSignin} /> */}
+            </Switch>
+          </>
+      )} />
     );
   }
 }

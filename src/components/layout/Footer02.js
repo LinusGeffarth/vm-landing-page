@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import Logo from './partials/Logo';
 import FooterNav from './partials/FooterNav';
 // import FooterSocial from './partials/FooterSocial';
+import { Link } from 'react-router-dom';
 
 const propTypes = {
   topOuterDivider: PropTypes.bool,
@@ -49,26 +50,23 @@ class Footer extends React.Component {
             <div className="footer-top text-xxs">
               <div className="footer-blocks">
                 <div className="footer-block">
-                  <Logo className="mb-16" />
+                  <Logo appearance="light" className="mb-28" style={{ marginTop: -16 }} />
                   <div className="footer-copyright">&copy; 2020 CONVELA, all rights reserved – in cooperation with Omilia</div>
                 </div>
-                {/* <div className="footer-block">
-                  <div className="footer-block-title">Company</div>
+                <div className="footer-block">
+                  <div className="footer-block-title">Unternehmen</div>
                   <ul className="list-reset mb-0">
                     <li>
-                      <a href="https://cruip.com/">Dummy text used</a>
+                      <Link to="/imprint">Impressum</Link>
                     </li>
                     <li>
-                      <a href="https://cruip.com/">The purpose of lorem</a>
+                      <Link to="/terms">AGB</Link>
                     </li>
                     <li>
-                      <a href="https://cruip.com/">Filler text can be very useful</a>
-                    </li>
-                    <li>
-                      <a href="https://cruip.com/">Be on design</a>
+                      <Link to="/privacy">Datenschutz</Link>
                     </li>
                   </ul>
-                </div> */}
+                </div>
                 <div className="footer-block">
                   <div className="footer-block-title">Technisches</div>
                   <ul className="list-reset mb-0">

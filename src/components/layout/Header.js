@@ -94,7 +94,7 @@ class Header extends React.Component {
               'site-header-inner',
               bottomDivider && 'has-bottom-divider'
             )}>
-            <Logo className="reveal-from-left" />
+            <Logo className="reveal-from-left" appearance="dark" size={120} style={{ marginTop: -10 }} />
             {!hideNav &&
               <React.Fragment>
                 <button

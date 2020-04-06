@@ -16,10 +16,26 @@ import Button from '../components/elements/Button';
 import Accordion from '../components/elements/Accordion';
 import AccordionItem from '../components/elements/AccordionItem';
 
+const scrollTo = (ref) => {
+  if (!ref || !ref.current) { return; }
+  window.scrollTo(0, ref.current.offsetTop);
+}
+
 class Secondary extends React.Component {
 
+  constructor(props) {
+    super(props);
+
+    this.faqRef = React.createRef();
+    this.modsRef = React.createRef();
+
+    this.getRefsFromChild = this.getRefsFromChild.bind(this);
+  }
+
   state = {
-    demoModalActive: false
+    demoModalActive: false,
+    faqRef: null,
+    modsRef: null
   }
 
   openModal = (e) => {
@@ -32,28 +48,38 @@ class Secondary extends React.Component {
     this.setState({ demoModalActive: false });
   }
 
+  getRefsFromChild(modsRef) {
+    this.setState({ modsRef: modsRef });
+  }
+
+  componentDidMount() {
+    this.setState({ faqRef: this.faqRef, modsRef: this.modsRef })
+  }
+
   render() {
+    if (window.location.hash) {
+      switch(window.location.hash) {
+        case '#faq':
+          scrollTo(this.state.faqRef);
+          break;
+        case '#moderators':
+          scrollTo(this.state.modsRef);
+          break;
+        default:
+          break
+      }
+    }
 
-    // const genericSection01Header = {
-    //   title: 'Buttons - Lorem ipsum is placeholder text commonly used.'
-    // }
-
-    // const genericSection02Header = {
-    //   title: 'Input forms - Lorem ipsum is placeholder text commonly used.'
-    // }
-
-    // const genericSection03Header = {
-    //   title: 'Modal - Lorem ipsum is placeholder text commonly used.'
-    // }
-
-    const genericSection04Header = {
+    const faqSectionHeader = {
       title: 'FAQ - Hier sind die wichtigsten Fragen und Antworten.'
     }
 
     return (
       <React.Fragment>
         <HeroFull className="illustration-section-02" />
-        <Team />
+        <div ref={this.modsRef}>
+          <Team />
+        </div>
         <Roadmap topDivider />
 
         <GenericSection topDivider>
@@ -154,132 +180,41 @@ class Secondary extends React.Component {
           </div>
         </GenericSection>
 
-        {/* <GenericSection topDivider className="center-content">
-          <div className="container-xs">
-            <SectionHeader data={genericSection01Header} className="center-content" />
-            <ButtonGroup>
-              <Button color="primary" wideMobile>Get started</Button>
-              <Button color="secondary" wideMobile>Get started</Button>
-              <Button color="dark" wideMobile>Get started</Button>
-            </ButtonGroup>
-          </div>
-        </GenericSection>
-
-        <GenericSection topDivider>
-          <div className="container-xs">
-            <SectionHeader data={genericSection02Header} className="center-content" />
-            <form style={formStyle}>
-              <div className="mb-24">
-                <Input
-                  type="email"
-                  label="This is a label"
-                  placeholder="Your best email.."
-                  formGroup="desktop"
-                  labelHidden>
-                  <Button color="primary">Early access</Button>
-                </Input>
-              </div>
-              <div className="mb-24">
-                <Input
-                  type="email"
-                  label="This is a label"
-                  placeholder="Your best email.."
-                  formGroup="desktop"
-                  labelHidden
-                  status="error"
-                  hint="Something is wrong.">
-                  <Button color="primary">Early access</Button>
-                </Input>
-              </div>
-              <div className="mb-24">
-                <Input
-                  type="email"
-                  label="This is a label"
-                  placeholder="Your best email.."
-                  formGroup="desktop"
-                  labelHidden
-                  status="success"
-                  hint="You've done it.">
-                  <Button color="primary">Early access</Button>
-                </Input>
-              </div>
-            </form>
-          </div>
-        </GenericSection>
-
-        <GenericSection topDivider>
-          <div className="container-xs">
-            <SectionHeader data={genericSection03Header} className="center-content" />
-            <div className="center-content">
-              <Button
-                color="secondary"
-                aria-controls="demo-modal"
-                onClick={this.openModal}>Open modal</Button>
+        <div ref={this.faqRef}>
+          <GenericSection>
+            <div className="container-xs">
+              <SectionHeader data={faqSectionHeader} className="center-content" />
+              <Accordion>
+                <AccordionItem title="Wie verläuft eine Online Gedenkfeier?" active>
+                  <b>Die Zeremonie</b><br />
+                  Zum vereinbarten Termin - Datum und Uhrzeit - eröffnet die Moderatorin / der Moderator den virtuellen Raum für die Gedenk- oder Trauerfeier für alle eingeladenen Trauergäste.<br />
+                  Sie oder er begrüßt alle Trauergäste und beginnt die 30-minütige Gedenk- oder Trauerfeier mit Fotos, Musik und persönlichen Worten, ganz so, wie es mit den Angehörigen im Vorfeld genau besprochen wurde.<br />
+                  Über Rituale während der Feier bindet die Moderatorin / der Moderator alle Trauergäste ein. Individuelle Elemente schaffen einen emotionalen Raum für einen gemeinsam erlebten Abschied. Jeder kann, aber niemand muss etwas einbringen. Unsere erfahrenen Moderator:innen führen professionell und kompetent durch die Zeremonie.
+                </AccordionItem>
+                <AccordionItem title="Welche technischen Voraussetzungen und Kenntnisse muss ich haben?">
+                  <b>Im Vorfeld</b><br />
+                  Alle Trauergäste bekommen per E-Mail eine persönliche Einladung mit den nötigen Zugangsdaten für den online Konferenzraum.<br />
+                  Der virtuelle Raum für die Online Gedenk-oder Trauerfeier kann über einen Computer, ein Tablet oder ein Smartphone benutzt werden.<br />
+                  Es sollte eine mittelmäßig bis gute Kamera am Gerät sein.<br />
+                  Für ein gutes Bild wäre es sinnvoll, wenn das Gerät während der Feier feststeht oder liegt, damit wacklige Bilder vermieden werden.<br />
+                  Außerdem sorgt ein Headset mit Mikrofon-funktion meistens für eine bessere Tonqualität.<br />
+                  Alle Gäste sollten mindestens 15 Minuten vor Beginn der Online-Trauerfeier im online „Warteraum“ sein und die Internetverbindung sowie Ton- und Bildqualität zu testen. Wenn Sie dafür technische Unterstützung wünschen, buchen Sie diesen Service für sich und Ihre Trauergäste.
+                </AccordionItem>
+                <AccordionItem title="Was ist ein Online Trauer-Café?">
+                  Während die Zeremonie einem festen Ablauf folgt und damit einen offizielleren Charakter hat, ist das 30-minütige „Trauer-Café“ für den lockereren Austausch von Gedanken, Erinnerungen, Bildern. Es kann eine Unterhaltung entstehen; es können Anekdoten erzählt werden und natürlich können die Trauergäste gemeinsam singen und musizieren. Hier moderiert der Trauerfeier-Moderator zurückhaltend und stellt die ein gutes Gesprächsklima her.<br />
+                  Spontane Entwicklungen sind gewünscht; ggf. kann die Dauer auch verlängert werden.
+                </AccordionItem>
+                <AccordionItem title="Brauche ich einen Bestatter?">
+                  <b>Nein</b>, Sie brauchen keinen Bestatter.<br />
+                  Für eine Online Gedenkfeier benötigen Sie keinen Bestatter. Wenn Sie eine Online-Trauerfeier wünschen, dann setzen wir uns mit Ihrem Bestatter in Verbindung und besprechen die nötigen Einzelheiten. Gern vermitteln wir Sie an Bestatter aus unserem umfassenden Netzwerk, die Ihre Wünsche unterstützen. Fragen Sie uns für alle Leistungen an.
+                </AccordionItem>
+                <AccordionItem title="Kann ich die Gedenkseite danach weiter nutzen?">
+                  Ihnen steht die Gedenkseite kostenlos zur Verfügung, solange, bis Sie diese kündigen. Sie können den persönlichen Zugang zum größten und wichtigsten Gedenkportal kostenlos schon vor der Buchung bekommen und die Gedenkseite einrichten. Viele Funktionen stehen Ihnen hier zur Verfügung: Bilder, Videos, Kondolenzbuch, Gedenkkerzen, kleine Trauergeschenke und viel Platz für die Erinnerungen.
+                </AccordionItem>
+              </Accordion>
             </div>
-            <Modal
-              id="demo-modal"
-              show={this.state.demoModalActive}
-              handleClose={this.closeModal}
-            >
-              <div className="center-content">
-                <h3 className="mt-32 mb-12">Join our newsletter</h3>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <Input
-                type="email"
-                label="This is a label"
-                placeholder="Your best email.."
-                formGroup="desktop"
-                labelHidden>
-                <Button color="primary">Subscribe</Button>
-              </Input>
-              <div className="center-content mt-24">
-                <a
-                  className="func-link text-xxs fw-500 tt-u"
-                  aria-label="close"
-                  href="#0"
-                  onClick={this.closeModal}
-                >No thanks!</a>
-              </div>
-            </Modal>
-          </div >
-        </GenericSection> */}
-
-        <GenericSection>
-          <div className="container-xs" id="faq">
-            <SectionHeader data={genericSection04Header} className="center-content" />
-            <Accordion>
-              <AccordionItem title="Wie verläuft eine Online Gedenkfeier?" active>
-                <b>Die Zeremonie</b><br />
-                Zum vereinbarten Termin - Datum und Uhrzeit - eröffnet die Moderatorin / der Moderator den virtuellen Raum für die Gedenk- oder Trauerfeier für alle eingeladenen Trauergäste.<br />
-                Sie oder er begrüßt alle Trauergäste und beginnt die 30-minütige Gedenk- oder Trauerfeier mit Fotos, Musik und persönlichen Worten, ganz so, wie es mit den Angehörigen im Vorfeld genau besprochen wurde.<br />
-                Über Rituale während der Feier bindet die Moderatorin / der Moderator alle Trauergäste ein. Individuelle Elemente schaffen einen emotionalen Raum für einen gemeinsam erlebten Abschied. Jeder kann, aber niemand muss etwas einbringen. Unsere erfahrenen Moderator:innen führen professionell und kompetent durch die Zeremonie.
-              </AccordionItem>
-              <AccordionItem title="Welche technischen Voraussetzungen und Kenntnisse muss ich haben?">
-                <b>Im Vorfeld</b><br />
-                Alle Trauergäste bekommen per E-Mail eine persönliche Einladung mit den nötigen Zugangsdaten für den online Konferenzraum.<br />
-                Der virtuelle Raum für die Online Gedenk-oder Trauerfeier kann über einen Computer, ein Tablet oder ein Smartphone benutzt werden.<br />
-                Es sollte eine mittelmäßig bis gute Kamera am Gerät sein.<br />
-                Für ein gutes Bild wäre es sinnvoll, wenn das Gerät während der Feier feststeht oder liegt, damit wacklige Bilder vermieden werden.<br />
-                Außerdem sorgt ein Headset mit Mikrofon-funktion meistens für eine bessere Tonqualität.<br />
-                Alle Gäste sollten mindestens 15 Minuten vor Beginn der Online-Trauerfeier im online „Warteraum“ sein und die Internetverbindung sowie Ton- und Bildqualität zu testen. Wenn Sie dafür technische Unterstützung wünschen, buchen Sie diesen Service für sich und Ihre Trauergäste.
-              </AccordionItem>
-              <AccordionItem title="Was ist ein Online Trauer-Café?">
-                Während die Zeremonie einem festen Ablauf folgt und damit einen offizielleren Charakter hat, ist das 30-minütige „Trauer-Café“ für den lockereren Austausch von Gedanken, Erinnerungen, Bildern. Es kann eine Unterhaltung entstehen; es können Anekdoten erzählt werden und natürlich können die Trauergäste gemeinsam singen und musizieren. Hier moderiert der Trauerfeier-Moderator zurückhaltend und stellt die ein gutes Gesprächsklima her.<br />
-                Spontane Entwicklungen sind gewünscht; ggf. kann die Dauer auch verlängert werden.
-              </AccordionItem>
-              <AccordionItem title="Brauche ich einen Bestatter?">
-                <b>Nein</b>, Sie brauchen keinen Bestatter.<br />
-                Für eine Online Gedenkfeier benötigen Sie keinen Bestatter. Wenn Sie eine Online-Trauerfeier wünschen, dann setzen wir uns mit Ihrem Bestatter in Verbindung und besprechen die nötigen Einzelheiten. Gern vermitteln wir Sie an Bestatter aus unserem umfassenden Netzwerk, die Ihre Wünsche unterstützen. Fragen Sie uns für alle Leistungen an.
-              </AccordionItem>
-              <AccordionItem title="Kann ich die Gedenkseite danach weiter nutzen?">
-                Ihnen steht die Gedenkseite kostenlos zur Verfügung, solange, bis Sie diese kündigen. Sie können den persönlichen Zugang zum größten und wichtigsten Gedenkportal kostenlos schon vor der Buchung bekommen und die Gedenkseite einrichten. Viele Funktionen stehen Ihnen hier zur Verfügung: Bilder, Videos, Kondolenzbuch, Gedenkkerzen, kleine Trauergeschenke und viel Platz für die Erinnerungen.
-              </AccordionItem>
-            </Accordion>
-          </div>
-        </GenericSection>
+          </GenericSection>
+        </div>
 
         <div className="spacer-64 spacer-24-mobile has-bg-color"></div>
         <div className="spacer-24 has-bg-color"></div>

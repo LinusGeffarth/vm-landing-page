@@ -304,6 +304,10 @@ img.has-shadow {
 	margin-bottom: 24px;
 }
 
+.mb-28 {
+	margin-bottom: 28px;
+}
+
 .ml-24 {
 	margin-left: 24px;
 }
@@ -322,6 +326,10 @@ img.has-shadow {
 
 .mb-32 {
 	margin-bottom: 32px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
 }
 
 .ml-32 {
@@ -562,7 +570,7 @@ img.has-shadow {
 
 	.spacer-64-mobile {
 		padding-top: 64px;
-	}	
+	}
 }
 
 @include media( '>medium' ) {
