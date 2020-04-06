@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import GenericSection from '../components/sections/GenericSection';
 import Cta from '../components/sections/Cta';
 
@@ -284,7 +283,7 @@ class Privacy extends React.Component {
               <p>
                 Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können.<br />
                 Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie das Browser-Add-on [<a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noopener noreferrer">https://tools.google.com/dlpage/gaoptout?hl=de</a>] herunterladen und installieren. Opt-Out-Cookies verhindern die zukünftige Erfassung Ihrer Daten beim Besuch dieser Website. Um die Erfassung durch Universal Analytics über verschiedene Geräte hinweg zu verhindern, müssen Sie das Opt-Out auf allen genutzten Systemen durchführen. Wenn Sie hier klicken, wird das Opt-Out-Cookie gesetzt: Google Analytics deaktivieren.<br />
-                Nähere Informationen zu Nutzungsbedingungen und Datenschutz von Google finden Sie unter <a href="http://www.google.com/analytics/terms/de.html" target="_blank" rel="noopener noreferrer">http://www.google.com/analytics/terms/de.html</a> bzw. unter <a href="http://www.google.com/intl/de/analytics/privacyoverview.html" target="_blank" rel="noopener nore">http://www.google.com/intl/de/analytics/privacyoverview.html</a>.
+                Nähere Informationen zu Nutzungsbedingungen und Datenschutz von Google finden Sie unter <a href="http://www.google.com/analytics/terms/de.html" target="_blank" rel="noopener noreferrer">http://www.google.com/analytics/terms/de.html</a> bzw. unter <a href="http://www.google.com/intl/de/analytics/privacyoverview.html" target="_blank" rel="noopener noreferrer">http://www.google.com/intl/de/analytics/privacyoverview.html</a>.
               </p>
             </p>
 

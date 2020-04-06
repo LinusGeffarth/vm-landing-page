@@ -227,12 +227,6 @@ class Pricing extends React.Component {
                     <Button tag="a" color="primary" wide href={"mailto:office@trauerfeier.online,office@omilia.de?subject=Buchung Online-Gedenkfeier „Basis-Produkt Online”&body=Guten Tag,%0D%0A%0D%0AHiermit möchte ich eine Online-Gedenkfeier im Tarif ”Basis-Produkt Online” verbindlich buchen.%0D%0A%0D%0AHier sind meine Daten:%0D%0AName: %0D%0ATelefonnummer: %0D%0A%0D%0ABitte senden Sie mir ein Bestätigung für diese Buchung zu.%0D%0A%0D%0AVielen Dank."}>Kostenlos starten</Button>
                   </div>
                 </div>
-
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                  <HashLink to="/#features" className="pricing-more-info">
-                    Sie wollen mehr Details?
-                  </HashLink>
-                </div>
               </div>
 
               <div className="tiles-item illustration-element-07 reveal-scale-up" data-reveal-delay="300">
@@ -267,6 +261,12 @@ class Pricing extends React.Component {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="pricing-more-info-container">
+              <HashLink to="/#features" className="pricing-more-info">
+                Sie wollen mehr Details?
+              </HashLink>
             </div>
 
           </div>
