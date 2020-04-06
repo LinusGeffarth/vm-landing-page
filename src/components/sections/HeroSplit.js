@@ -71,7 +71,7 @@ class HeroSplit extends React.Component {
                   Mit der Online-Gedenkfeier eröffnen wir Ihnen und Ihren Angehörigen die Möglichkeit, zusammen zu sein und einander zu stützen: per Video – professionell moderiert.
                   </p>
                   <div className="reveal-from-left" data-reveal-delay="450">
-                    <Button tag="a" color="primary" href="/#pricing" wideMobile>
+                    <Button tag="a" color="primary" href="#pricing" wideMobile>
                       Unsere Angebote
                     </Button>
                   </div>
