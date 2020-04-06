@@ -72,11 +72,11 @@ class FeaturesTiles extends React.Component {
     }, {
       icon: 'video',
       title: 'Feier-Dokumentation',
-      text: 'Die Beisetzung dokumentieren wir per Videomitschnitt und stellen die Aufnahme als Link Ihnen und den Trauergästen zur Verfügung.'
+      text: 'Die Online-Gedenkfeier dokumentieren wir per Videomitschnitt und stellen die Aufnahme als Link Ihnen und den Trauergästen zur Verfügung.'
     }, {
       icon: 'support',
       title: 'Service & Support',
-      text: 'Nach der Buchung Ihrer  Online-Gedenkfeier erhalten Sie und alle Teilnehmenden Informationen zur Handhabung. '
+      text: 'Nach der Buchung Ihrer Online-Gedenkfeier erhalten Sie und alle Teilnehmenden Informationen zur Handhabung.'
     // }, {
     //   icon: 'live',
     //   title: 'Live-Streaming (geplant)',
