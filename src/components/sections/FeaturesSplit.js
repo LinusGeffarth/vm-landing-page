@@ -63,17 +63,17 @@ class FeaturesSplit extends React.Component {
       image: 'zoom-screenshot',
       title: 'Traditionelle Zeremonie – Online',
       subtitle: 'Mit Blumen, Rede, Kerzen, Bildern und Musik',
-      text: 'Ein:e zertifizierte:r Trauerredner:in oder Trauerbegleiter:in Ihrer Wahl moderiert die Online-Gedenkfeier nach einem klaren Ablauf und über einen Online-Channel und kümmert sich verlässlich um alles Organisatorische – vor, während und nach Ihrem Zusammensein. '
+      text: 'Ein zertifizierter Trauerredner oder Trauerbegleiter Ihrer Wahl moderiert die Online-Gedenkfeier nach einem klaren Ablauf und über einen Online-Channel und kümmert sich verlässlich um alles Organisatorische – vor, während und nach Ihrem Zusammensein. '
     }, {
       image: 'gedenkseiten',
       title: 'Gedenkseite & Kondolenzbuch',
       subtitle: 'Damit Gedanken und Worte bleiben',
-      text: 'Jede Online-Gedenkfeier erhält eine kostenlose Gedenkseite auf dem bedeutendsten Online-Gedenkportal: mit Fotos und Videos des Verstorbenen, seinen Lebensdaten sowie dem Kondolenzbuch.\nDen Link zur Gedenkseite erhalten alle Trauergäste vorab. So können sie sich vor und nach der Online-Gedenkfeier dort eintragen. Aber auch während der Online-Gedenkfeier ist das möglich: per Chat an Ihre:n Moderator:in, der:die Ihre Worte später ins Kondolenzbuch überträgt.'
+      text: 'Jede Online-Gedenkfeier erhält eine kostenlose Gedenkseite auf dem bedeutendsten Online-Gedenkportal: mit Fotos und Videos des Verstorbenen, seinen Lebensdaten sowie dem Kondolenzbuch.\nDen Link zur Gedenkseite erhalten alle Trauergäste vorab. So können sie sich vor und nach der Online-Gedenkfeier dort eintragen. Aber auch während der Online-Gedenkfeier ist das möglich: per Chat an Ihren Moderator, der Ihre Worte später ins Kondolenzbuch überträgt.'
     }, {
       image: 'trauer-cafe',
       title: 'Trauercafé online',
       subtitle: 'Sie sind auch nach der Online-Gedenkfeier nicht allein',
-      text: 'Nach der Online-Gedenkfeier beisammen sein, sich austauschen und einander stützen: Das ist für viele Trauergäste sehr wichtig, und im Online-Trauercafé haben Sie dazu die Gelegenheit. Ihr:e Moderator:in aus der Online-Gedenkfeier begleitet Sie beim Austausch von Gedanken und Erinnerungen.'
+      text: 'Nach der Online-Gedenkfeier beisammen sein, sich austauschen und einander stützen: Das ist für viele Trauergäste sehr wichtig, und im Online-Trauercafé haben Sie dazu die Gelegenheit. Ihr Moderator aus der Online-Gedenkfeier begleitet Sie beim Austausch von Gedanken und Erinnerungen.'
     }, {
       image: 'sharing-links',
       title: 'Dokumentation der Gedenkfeier',

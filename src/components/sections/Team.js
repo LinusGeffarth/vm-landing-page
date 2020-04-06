@@ -50,8 +50,8 @@ class Team extends React.Component {
     );
 
     const sectionHeader = {
-      title: 'Die Moderator:innen Ihrer Online-Gedenkfeier: Erfahren und einfühlsam',
-      paragraph: 'Wir sind Ihre Moderator:innen und begleiten Sie vor, während und nach Ihrer Online-Gedenkfeier: Professionell, branchenerfahren und emotional kompetent.'
+      title: 'Die Moderatoren Ihrer Online-Gedenkfeier: Erfahren und einfühlsam',
+      paragraph: 'Wir sind Ihre Moderatoren und begleiten Sie vor, während und nach Ihrer Online-Gedenkfeier: Professionell, branchenerfahren und emotional kompetent.'
     };
 
     const mods = [{

@@ -185,7 +185,7 @@ class Secondary extends React.Component {
                   <b>Die Zeremonie</b><br />
                   Zum vereinbarten Termin - Datum und Uhrzeit - eröffnet die Moderatorin / der Moderator den virtuellen Raum für die Gedenk- oder Trauerfeier für alle eingeladenen Trauergäste.<br />
                   Sie oder er begrüßt alle Trauergäste und beginnt die 30-minütige Gedenk- oder Trauerfeier mit Fotos, Musik und persönlichen Worten, ganz so, wie es mit den Angehörigen im Vorfeld genau besprochen wurde.<br />
-                  Über Rituale während der Feier bindet die Moderatorin / der Moderator alle Trauergäste ein. Individuelle Elemente schaffen einen emotionalen Raum für einen gemeinsam erlebten Abschied. Jeder kann, aber niemand muss etwas einbringen. Unsere erfahrenen Moderator:innen führen professionell und kompetent durch die Zeremonie.
+                  Über Rituale während der Feier bindet die Moderatorin / der Moderator alle Trauergäste ein. Individuelle Elemente schaffen einen emotionalen Raum für einen gemeinsam erlebten Abschied. Jeder kann, aber niemand muss etwas einbringen. Unsere erfahrenen Moderatoren führen professionell und kompetent durch die Zeremonie.
                 </AccordionItem>
                 <AccordionItem title="Welche technischen Voraussetzungen und Kenntnisse muss ich haben?">
                   <b>Im Vorfeld</b><br />
@@ -196,7 +196,7 @@ class Secondary extends React.Component {
                   Alle Gäste sollten wenigstens 15 Minuten vor Beginn der Online-Trauerfeier im Online-„Warteraum“ sein, um die Internetverbindung sowie Ton- und Bildqualität zu testen. Wenn Sie dafür technische Unterstützung wünschen, buchen Sie diesen Service für sich und Ihre Trauergäste.
                 </AccordionItem>
                 <AccordionItem title="Was ist ein Online Trauercafé?">
-                  Während die Zeremonie einem festen Ablauf folgt und damit einen verbindlicheren Charakter hat, ist das 30-minütige „Trauercafé“ für den lockeren Austausch von Gedanken, Erinnerungen, Bildern gedacht. So kann eine Unterhaltung entstehen: Es können Anekdoten erzählt werden, und natürlich können die Trauergäste gemeinsam singen und musizieren. Hier moderiert die Moderatorin / der Moderator zurückhaltend und stellt vor allem ein gutes Gesprächsklima her.<br />
+                  Während die Zeremonie einem festen Ablauf folgt und damit einen verbindlicheren Charakter hat, ist das 30-minütige „Trauercafé“ für den lockeren Austausch von Gedanken, Erinnerungen, Bildern gedacht. So kann eine Unterhaltung entstehen: Es können Anekdoten erzählt werden, und natürlich können die Trauergäste gemeinsam singen und musizieren. Hier moderiert der Moderator zurückhaltend und stellt vor allem ein gutes Gesprächsklima her.<br />
                   Spontane Entwicklungen sind erwünscht, und ggf. kann die Dauer auch verlängert werden.
                 </AccordionItem>
                 <AccordionItem title="Brauche ich einen Bestatter?">

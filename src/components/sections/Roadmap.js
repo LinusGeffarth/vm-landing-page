@@ -51,8 +51,8 @@ class Roadmap extends React.Component {
     const steps = [
       { title: 'Buchung', text: 'Wählen Sie ein Produkt und buchen Sie es. Die Buchung erfolgt verbindlich über das Online-Portal Funeral-Market.place' },
       { title: 'Details per Mail', text: 'Sie bekommen per E-Mail alle Details zu den Informationen, die wir noch von Ihnen benötigen.' },
-      { title: 'Auswahl Moderator:in', text: 'Über ein Kontaktformular wählen Sie eine:n Moderator:in für Ihre Online Trauer- oder Gedenkfeier.' },
-      { title: 'Gespräch mit Moderator:in', text: 'Ein:e Moderator:in setzt sich mit Ihnen in Verbindung, um alle Einzelheiten und Wünsche für die Feier sowie die Liste der Trauergäste zu besprechen.' },
+      { title: 'Auswahl Moderator', text: 'Über ein Kontaktformular wählen Sie einen Moderator für Ihre Online Trauer- oder Gedenkfeier.' },
+      { title: 'Gespräch mit Moderator', text: 'Ein Moderator setzt sich mit Ihnen in Verbindung, um alle Einzelheiten und Wünsche für die Feier sowie die Liste der Trauergäste zu besprechen.' },
       { title: 'Einladung', text: 'Sie und alle Trauergäste erhalten per E-Mail die Einladung zur Gedenk- oder Trauerfeier.' }
     ]
 
