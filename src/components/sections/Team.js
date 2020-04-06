@@ -109,9 +109,9 @@ class Team extends React.Component {
                         <div className="team-item-role text-color-secondary text-xxs tt-u fw-500 mb-8 reveal-from-bottom" data-reveal-container=".tiles-item" data-reveal-delay="150">
                             {mod.title}
                         </div>
-                        <p className="m-0 text-sm reveal-from-bottom" data-reveal-container=".tiles-item" data-reveal-delay="300">
+                        {/* <p className="m-0 text-sm reveal-from-bottom" data-reveal-container=".tiles-item" data-reveal-delay="300">
                             {mod.description}
-                        </p>
+                        </p> */}
                     </div>
                   </div>
                 </div>
