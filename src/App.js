@@ -12,6 +12,7 @@ import LayoutAlternative from './layouts/LayoutAlternative';
 // Views
 import Home from './views/Home';
 import Secondary from './views/Secondary';
+import Press from './views/Press';
 import Imprint from './views/Imprint';
 import Terms from './views/Terms';
 import Privacy from './views/Privacy';
@@ -42,6 +43,7 @@ class App extends React.Component {
             <Switch>
               <AppRoute exact path="/" component={Home} layout={LayoutAlternative} />
               <AppRoute exact path="/more-info" component={Secondary} layout={LayoutAlternative} />
+              <AppRoute exact path="/press" component={Press} layout={LayoutAlternative} />
               <AppRoute exact path="/imprint" component={Imprint} layout={LayoutAlternative} />
               <AppRoute exact path="/terms" component={Terms} layout={LayoutAlternative} />
               <AppRoute exact path="/privacy" component={Privacy} layout={LayoutAlternative} />

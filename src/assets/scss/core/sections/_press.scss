@@ -1,0 +1,22 @@
+.press {
+  &-download-section + h5 {
+    margin-top: 40px !important;
+  }
+
+  &-download-section {
+    &-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    & > span {
+      margin-bottom: 10px;
+    }
+  }
+}
