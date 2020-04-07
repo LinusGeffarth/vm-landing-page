@@ -87,6 +87,9 @@ class Footer extends React.Component {
                     <li>
                       <a href="https://form.jotform.com/200964170187052" target="_blank" rel="noopener noreferrer">Infos für Moderatoren</a>
                     </li>
+                    <li>
+                      <a href="https://form.jotform.com/200965869230057" target="_blank" rel="noopener noreferrer">Gästeliste</a>
+                    </li>
                   </ul>
                 </div>
               </div>

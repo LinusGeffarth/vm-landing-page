@@ -68,7 +68,7 @@ class HeroSplit extends React.Component {
                     Abschiednehmen trotz COVID19
                   </h1>
                   <p className="mt-0 mb-24 reveal-from-left" data-reveal-delay="300">
-                  Mit der Online-Gedenkfeier eröffnen wir Ihnen und Ihren Angehörigen die Möglichkeit, zusammen zu sein und einander zu stützen: per Video – professionell moderiert.
+                    Mit der Online-Gedenkfeier eröffnen wir Ihnen und Ihren Angehörigen die Möglichkeit, zusammen zu sein und einander zu stützen: per Video – professionell moderiert.
                   </p>
                   <div className="reveal-from-left" data-reveal-delay="450">
                     <HashLink to="/#pricing" className="button button-primary">

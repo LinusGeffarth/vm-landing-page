@@ -212,7 +212,7 @@ class Pricing extends React.Component {
                           Basis-Produkt ONLINE
                         </div>
                         <div className="pricing-price">
-                          0 €
+                          <strike>289 €</strike>
                         </div>
                       </div>
                     </div>

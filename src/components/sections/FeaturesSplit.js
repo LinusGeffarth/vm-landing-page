@@ -112,18 +112,12 @@ class FeaturesSplit extends React.Component {
                     data-reveal-container=".split-item"
                     data-reveal-delay="200">
                     <Image
-                      src={require('./../../assets/images/features-split-image.svg')}
+                      src={require('./../../assets/illustrations/' + item.image + '.png')}
                       alt="Features split 01"
-                      width={528}
-                      height={396} />
-                    <div style={i%2 === 0 ? imgEvenStyle : imgOddStyle}>
-                      <Image
-                        src={require('./../../assets/illustrations/' + item.image + '.png')}
-                        alt="Features split top 01"
-                        width={700}
-                        height={583}
+                      width={512}
+                      height={512*0.56}
+                      style={{ boxShadow: '0px 32px 88px 0px rgba(29,43,76,0.24)', margin: '50px 0 50px' }}
                       />
-                    </div>
                   </div>
                 </div>
               )}
@@ -139,22 +133,6 @@ class FeaturesSplit extends React.Component {
       </section>
     );
   }
-}
-
-const imgOddStyle = {
-  position: 'absolute',
-  width: '132.57%',
-  maxWidth: '132.57%',
-  top: '-3%',
-  left: '-16.1%'
-}
-
-const imgEvenStyle = {
-  position: 'absolute',
-  width: '132.57%',
-  maxWidth: '132.57%',
-  top: '-3%',
-  left: '-16.6%'
 }
 
 FeaturesSplit.propTypes = propTypes;
