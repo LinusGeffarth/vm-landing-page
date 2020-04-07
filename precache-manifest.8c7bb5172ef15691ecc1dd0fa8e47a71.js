@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b561972ac502c6030ed9bffc545b100b",
+    "revision": "9aaa0ccbf85b8eae68a400b4cbc2bf94",
     "url": "/index.html"
   },
   {
-    "revision": "d34860c426bfc7ac10bd",
+    "revision": "aafa2159437480fbdeae",
     "url": "/static/css/main.b78a3e8b.chunk.css"
   },
   {
-    "revision": "e45a17c6d42575248426",
-    "url": "/static/js/2.bf70a308.chunk.js"
+    "revision": "0f04aaa86b856330e778",
+    "url": "/static/js/2.a82632d2.chunk.js"
   },
   {
-    "revision": "d34860c426bfc7ac10bd",
-    "url": "/static/js/main.430ea220.chunk.js"
+    "revision": "aafa2159437480fbdeae",
+    "url": "/static/js/main.b2c3dbb9.chunk.js"
   },
   {
     "revision": "416739b1ddd47b384332",
@@ -52,20 +52,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/asv.194fa8e3.png"
   },
   {
-    "revision": "c012217a1c58b81f28a83705695c9aa2",
-    "url": "/static/media/ceremonies-forbidden.c012217a.jpg"
+    "revision": "973ec7323f38a913d3de1f5adca1cb70",
+    "url": "/static/media/ceremonies-forbidden.973ec732.png"
   },
   {
     "revision": "640a14cfa5817e7a8f7ba52836f1a2b5",
     "url": "/static/media/convela.640a14cf.png"
   },
   {
-    "revision": "ce83ce96f32022dc52fde101342378d2",
-    "url": "/static/media/features-split-image.ce83ce96.svg"
-  },
-  {
-    "revision": "6767b9ad7957cd8e5ebf289ce63e85cb",
-    "url": "/static/media/gedenkseiten.6767b9ad.png"
+    "revision": "6672c6c5fcd813e566c0d8b981350498",
+    "url": "/static/media/gedenkseiten.6672c6c5.png"
   },
   {
     "revision": "79a963b93091c67b63a59f28f8cb2a2d",
@@ -100,8 +96,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/rituals.e0d7ff61.svg"
   },
   {
-    "revision": "fde0c5f2164634f6b2383c771d2250c3",
-    "url": "/static/media/sharing-links.fde0c5f2.png"
+    "revision": "537f284c842da8293fbecf09a2a3fea0",
+    "url": "/static/media/sharing-links.537f284c.png"
   },
   {
     "revision": "499d4b72cabfe5b646fadd2d7e100f45",
@@ -116,8 +112,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/testimonial-image-03.fa7cec13.jpg"
   },
   {
-    "revision": "7019f87a86a5f5b1cab2e2fa96356fc0",
-    "url": "/static/media/trauer-cafe.7019f87a.png"
+    "revision": "f7dfb7c9d089c2425bac09a90155cee3",
+    "url": "/static/media/trauer-cafe.f7dfb7c9.png"
   },
   {
     "revision": "6bf8bc0569ff90953520006a2f379abc",
@@ -128,11 +124,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/video.8c9e88dc.svg"
   },
   {
-    "revision": "6bf8bc0569ff90953520006a2f379abc",
-    "url": "/static/media/zoom-screenshot-video.6bf8bc05.jpg"
+    "revision": "c23e7673c53a7cf61bc7e03a363af9c1",
+    "url": "/static/media/zoom-screenshot-video.c23e7673.jpg"
   },
   {
-    "revision": "4a59641f6ff267979bc21283f6818e63",
-    "url": "/static/media/zoom-screenshot.4a59641f.png"
+    "revision": "ef4623868b5f75995148c3b355214441",
+    "url": "/static/media/zoom-screenshot.ef462386.png"
   }
 ]);
