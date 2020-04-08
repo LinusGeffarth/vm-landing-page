@@ -82,7 +82,7 @@ class Footer extends React.Component {
                   <div className="footer-block-title">Formulare</div>
                   <ul className="list-reset mb-0">
                     <li>
-                      <a href="https://form.jotform.com/200956132251043" target="_blank" rel="noopener noreferrer">Auswahl des Moderators</a>
+                      <Link to="/choose-a-moderator">Auswahl des Moderators</Link>
                     </li>
                     <li>
                       <a href="https://form.jotform.com/200964170187052" target="_blank" rel="noopener noreferrer">Infos für Moderatoren</a>
