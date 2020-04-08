@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f1fc43ac8bb72cd0e2e65bc74d175a7",
+    "revision": "216266e300e1fb1d694bfa661482b93e",
     "url": "/index.html"
   },
   {
-    "revision": "f386baefc65cf286d6e6",
+    "revision": "c591dd98fd9f323b88fe",
     "url": "/static/css/main.4f90fcb4.chunk.css"
   },
   {
-    "revision": "0f04aaa86b856330e778",
-    "url": "/static/js/2.a82632d2.chunk.js"
+    "revision": "1bff2976350ab709c475",
+    "url": "/static/js/2.795c61c6.chunk.js"
   },
   {
-    "revision": "f386baefc65cf286d6e6",
-    "url": "/static/js/main.60f73fb1.chunk.js"
+    "revision": "c591dd98fd9f323b88fe",
+    "url": "/static/js/main.7a98ab5e.chunk.js"
   },
   {
     "revision": "416739b1ddd47b384332",
@@ -46,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0c6b0d6f8c4941bcf3f2a6523f3dd8a8",
     "url": "/static/media/art_funeral.0c6b0d6f.png"
-  },
-  {
-    "revision": "194fa8e3877e0aa84836581439fdef4d",
-    "url": "/static/media/asv.194fa8e3.png"
   },
   {
     "revision": "973ec7323f38a913d3de1f5adca1cb70",
