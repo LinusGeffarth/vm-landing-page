@@ -77,7 +77,7 @@ figcaption {
 
 a {
 
-	&:not(.button) {
+	&:not(.button), &.button-plain {
 		@include anchor-aspect(main);
 		@include font-weight(link);
 	}
@@ -208,7 +208,7 @@ strong {
 
 	a {
 
-		&:not(.button) {
+		&:not(.button), &.button-plain {
 			@include anchor-aspect(main, inverse);
 		}
 

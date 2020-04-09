@@ -130,6 +130,19 @@
 	}
 }
 
+.button-plain {
+	color: inherit;
+	background-color: transparent;
+	padding: 0;
+	height: unset;
+	font: inherit;
+	text-transform: none;
+
+	&:hover {
+		background-color: inherit;
+	}
+}
+
 .button-block {
     display: flex;
 	width: 100%;

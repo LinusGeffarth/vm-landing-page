@@ -56,7 +56,7 @@ const FooterNav = ({
               <Button color="primary" tag="a" href="mailto:office@trauerfeier.online" style={{ display: 'unset', padding: '12px 31px' }}>per Mail anfragen</Button>
             </div>
           </Modal>
-          <Link onClick={openModal}>Technischer Notfall?</Link>
+          <Button color="plain" onClick={openModal}>Technischer Notfall?</Button>
         </li>
       </ul>
     </nav>

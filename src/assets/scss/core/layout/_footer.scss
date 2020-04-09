@@ -58,7 +58,7 @@
 		}
 	}
 
-	a {
+	a, .button-plain {
 		@include anchor-aspect(footer-block);
 		@include font-weight(footer-block-link);
 		text-transform: $link-footer-block--transform;
@@ -138,7 +138,7 @@
 	margin-right: -$footer-nav--padding-h;
 	margin-left: -$footer-nav--padding-h;
 
-	a {
+	a, &.button-plain {
 		@include anchor-aspect(footer);
 		@include font-weight(footer-link);
 		text-transform: $link-footer--transform;
