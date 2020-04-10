@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { throttle } from 'lodash';
-import isBot from './isBot';
 
 class ScrollReveal extends React.Component {
 
@@ -26,7 +25,7 @@ class ScrollReveal extends React.Component {
       let revealOffset = (el.getAttribute('data-reveal-offset') ? el.getAttribute('data-reveal-offset') : '200');
       let listenedEl = (el.getAttribute('data-reveal-container') ? el.closest(el.getAttribute('data-reveal-container')) : el);
       if (this.elementIsVisible(listenedEl, revealOffset) && !el.classList.contains('is-revealed')) {
-        if (!isBot() && revealDelay && revealDelay !== 0) {
+        if (revealDelay && revealDelay !== 0) {
           setTimeout(function () {
             el.classList.add('is-revealed');
           }, revealDelay);
@@ -46,7 +45,7 @@ class ScrollReveal extends React.Component {
         }
         this.revealElements();
       });
-    }, isBot() ? 0 : 100);
+    }, 100);
   };
 
   handleListeners = () => {
@@ -58,14 +57,14 @@ class ScrollReveal extends React.Component {
   handleScroll = throttle(() => {
     this.handleListeners();
     this.revealElements();
-  }, isBot() ? 0 : 30);
+  }, 30);
 
   handleResize = throttle(() => {
     this.setState({ viewportHeight: window.innerHeight }, () => {
       this.handleListeners();
       this.revealElements();
     });
-  }, isBot() ? 0 : 30);
+  }, 30);
 
   render() {
     return (
