@@ -6,11 +6,14 @@ import FeaturesSplit from '../components/sections/FeaturesSplit';
 import Testimonial from '../components/sections/Testimonial';
 import Pricing from '../components/sections/Pricing';
 import Cta from '../components/sections/Cta';
+import MetaTags from '../utils/MetaTags';
 
 class Home extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <>
+        <MetaTags />
+
         <HeroSplit imageFill className="illustration-section-01" />
         <Clients topDivider bottomDivider />
         <FeaturesTiles bottomDivider />
@@ -18,7 +21,7 @@ class Home extends React.Component {
         <Testimonial topDivider />
         <Pricing hasBgColor topDivider />
         <Cta hasBgColor invertColor topDivider bottomDivider split />
-      </React.Fragment>
+      </>
     );
   }
 }

@@ -10,6 +10,7 @@ import Accordion from '../components/elements/Accordion';
 import AccordionItem from '../components/elements/AccordionItem';
 import HashLink from '../components/elements/HashLink';
 import { Helmet } from "react-helmet";
+import MetaTags from '../utils/MetaTags';
 
 const scrollTo = (ref) => {
   if (!ref || !ref.current) { return; }
@@ -94,9 +95,11 @@ class Secondary extends React.Component {
       question: 'Kann ich die Gedenkseite danach weiter nutzen?',
       answer: `Ihnen steht die Gedenkseite kostenlos zur Verfügung, solange, bis Sie diese kündigen. Sie können den persönlichen Zugang zum größten und wichtigsten Gedenkportal kostenlos schon vor der Buchung bekommen und die Gedenkseite einrichten. Viele Funktionen stehen Ihnen hier zur Verfügung: Bilder, Videos, Kondolenzbuch, Gedenkkerzen, kleine Trauergeschenke und viel Platz für Ihre persönlichen Erinnerungen.`
     }];
+console.log(window.location.href);
 
     return (
-      <React.Fragment>
+      <>
+        <MetaTags />
         <Helmet>
           <script type="application/ld+json">{`{
             "@context": "https://schema.org",
@@ -240,7 +243,7 @@ class Secondary extends React.Component {
         <div className="spacer-64 spacer-24-mobile has-bg-color"></div>
         <div className="spacer-24 has-bg-color"></div>
         <Cta hasBgColor invertColor topDivider bottomDivider split />
-      </React.Fragment>
+      </>
     );
   }
 }

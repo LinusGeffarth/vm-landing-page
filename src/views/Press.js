@@ -2,11 +2,13 @@ import React from 'react';
 import GenericSection from '../components/sections/GenericSection';
 import Cta from '../components/sections/Cta';
 import Button from '../components/elements/Button';
+import MetaTags from '../utils/MetaTags';
 
 class Press extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <>
+        <MetaTags title={"Pressetexte & Downloads"} />
 
         <GenericSection>
           <div className="container-xs text-xs">
@@ -75,7 +77,7 @@ class Press extends React.Component {
         <div className="spacer-64 spacer-24-mobile has-bg-color"></div>
         <div className="spacer-24 has-bg-color"></div>
         <Cta hasBgColor invertColor topDivider bottomDivider split />
-      </React.Fragment>
+      </>
     );
   }
 }
