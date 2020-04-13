@@ -12,8 +12,8 @@ import './assets/scss/style.scss';
 
 const history = createBrowserHistory();
 
-if (isBot()) {
-  document.body.classList.remove('has-animations');
+if (!isBot()) {
+  document.body.classList.add('has-animations');
 }
 
 render(
