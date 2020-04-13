@@ -8,7 +8,6 @@
     "lodash": "^4.17.15",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
-    "react-device-detect": "^1.11.14",
     "react-dom": "^16.9.0",
     "react-helmet": "^6.0.0",
     "react-jotform-embed": "^1.0.4",
@@ -18,6 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "test-snapshot": "react-snapshot",
     "build": "react-scripts build && react-snapshot && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

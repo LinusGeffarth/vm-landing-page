@@ -51,7 +51,14 @@
     <div id="root" class="body-wrap"></div>
 
     <script>
-      if (!/bot|googlebot|crawler|spider|robot|crawling|prerender/i.test(navigator.userAgent)) {
+      /*
+        Enables animations only for
+        - non-build-steps
+        - non-bots
+        to allow for proper crawling / caching without reveal delay.
+      */
+      if (!/localhost:(?!300)/i.test(window.location.origin) &&
+          !/bot|googlebot|crawler|spider|robot|crawling|prerender/i.test(navigator.userAgent)) {
         document.body.classList.add('has-animations');
       }
     </script>
