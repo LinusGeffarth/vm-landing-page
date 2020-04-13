@@ -70,7 +70,7 @@ class HeroFull extends React.Component {
             </div>
             <div className="hero-figure illustration-element-02 reveal-scale-up" data-reveal-delay="150">
               <a
-                data-video="https://player.vimeo.com/video/404773609"
+                data-video="https://player.vimeo.com/video/406260975"
                 href="#0"
                 aria-controls="video-modal"
                 onClick={this.openModal}
@@ -87,7 +87,7 @@ class HeroFull extends React.Component {
               id="video-modal"
               show={this.state.videoModalActive}
               handleClose={this.closeModal}
-              video="https://player.vimeo.com/video/404773609"
+              video="https://player.vimeo.com/video/406260975"
               videoTag="iframe" />
           </div>
         </div>
