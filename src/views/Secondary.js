@@ -9,6 +9,7 @@ import Image from '../components/elements/Image';
 import Accordion from '../components/elements/Accordion';
 import AccordionItem from '../components/elements/AccordionItem';
 import HashLink from '../components/elements/HashLink';
+import { Helmet } from "react-helmet";
 
 const scrollTo = (ref) => {
   if (!ref || !ref.current) { return; }
@@ -68,8 +69,50 @@ class Secondary extends React.Component {
       title: 'FAQ - Hier sind die wichtigsten Fragen und Antworten.'
     }
 
+    const faq = [{
+      question: 'Wie verläuft eine Online-Trauerfeier?',
+      answer: `Zum vereinbarten Termin - Datum und Uhrzeit - eröffnet die Moderatorin / der Moderator den virtuellen Raum für die Gedenk- oder Trauerfeier für alle eingeladenen Trauergäste.<br />
+      Sie oder er begrüßt alle Trauergäste und beginnt die 30-minütige Gedenk- oder Trauerfeier mit Fotos, Musik und persönlichen Worten, ganz so, wie es mit den Angehörigen im Vorfeld genau besprochen wurde.<br />
+      Über Rituale während der Feier bindet die Moderatorin / der Moderator alle Trauergäste ein. Individuelle Elemente schaffen einen emotionalen Raum für einen gemeinsam erlebten Abschied. Jeder kann, aber niemand muss etwas einbringen. Unsere erfahrenen Moderatoren führen professionell und kompetent durch die Zeremonie.`,
+      isActive: true
+    }, {
+      question: 'Welche technischen Voraussetzungen und Kenntnisse muss ich haben?',
+      answer: `Alle Trauergäste bekommen per E-Mail eine persönliche Einladung mit den nötigen Zugangsdaten für den Online-Konferenzraum.<br />
+      Der virtuelle Raum für die Online-Gedenk- oder Trauerfeier kann über einen Computer, ein Tablet oder ein Smartphone genutzt werden.<br />
+      Das Gerät sollte über eine mittelmäßige bis gute Kamera verfügen. Für ein gutes Bild wäre es sinnvoll, wenn das Gerät während der Feier fest steht oder liegt, damit wacklige Bilder vermieden werden.<br />
+      Außerdem sorgt ein Headset mit Mikrofonfunktion meist für eine bessere Tonqualität.<br />
+      Alle Gäste sollten wenigstens 15 Minuten vor Beginn der Online-Trauerfeier im Online-„Warteraum“ sein, um die Internetverbindung sowie Ton- und Bildqualität zu testen. Wenn Sie dafür technische Unterstützung wünschen, buchen Sie diesen Service für sich und Ihre Trauergäste.`
+    }, {
+      question: 'Was ist ein Online-Trauercafé?',
+      answer: `Während die Zeremonie einem festen Ablauf folgt und damit einen verbindlicheren Charakter hat, ist das 30-minütige „Trauercafé“ für den lockeren Austausch von Gedanken, Erinnerungen, Bildern gedacht. So kann eine Unterhaltung entstehen: Es können Anekdoten erzählt werden, und natürlich können die Trauergäste gemeinsam singen und musizieren. Hier moderiert der Moderator zurückhaltend und stellt vor allem ein gutes Gesprächsklima her.<br />
+      Spontane Entwicklungen sind erwünscht, und ggf. kann die Dauer auch verlängert werden.`
+    }, {
+      question: 'Brauche ich einen Bestatter für eine Online-Trauerfeier?',
+      answer: `<b>Nein</b>, Sie brauchen keinen Bestatter.<br />
+      Für eine Online-Gedenkfeier benötigen Sie keinen Bestatter. Wenn Sie eine Online-Trauerfeier wünschen, dann setzen wir uns mit Ihrem Bestatter in Verbindung und besprechen die nötigen Einzelheiten. Gern vermitteln wir Sie an Bestatter aus unserem umfassenden Netzwerk, die Ihre Wünsche unterstützen. Fragen Sie uns für alle Leistungen an.`
+    }, {
+      question: 'Kann ich die Gedenkseite danach weiter nutzen?',
+      answer: `Ihnen steht die Gedenkseite kostenlos zur Verfügung, solange, bis Sie diese kündigen. Sie können den persönlichen Zugang zum größten und wichtigsten Gedenkportal kostenlos schon vor der Buchung bekommen und die Gedenkseite einrichten. Viele Funktionen stehen Ihnen hier zur Verfügung: Bilder, Videos, Kondolenzbuch, Gedenkkerzen, kleine Trauergeschenke und viel Platz für Ihre persönlichen Erinnerungen.`
+    }];
+
     return (
       <React.Fragment>
+        <Helmet>
+          <script type="application/ld+json">{`{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [` +
+              faq.map(item => `{
+                "@type": "Question",
+                "name": "` + item.question + `",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "` + item.answer + `"
+                }
+              }`) +
+            `]}`
+          }</script>
+        </Helmet>
         <HeroFull className="illustration-section-02" />
         <div ref={this.modsRef}>
           <Team />
@@ -181,31 +224,14 @@ class Secondary extends React.Component {
             <div className="container-xs">
               <SectionHeader data={faqSectionHeader} className="center-content" />
               <Accordion>
-                <AccordionItem title="Wie verläuft eine Online-Gedenkfeier?" active>
-                  <b>Die Zeremonie</b><br />
-                  Zum vereinbarten Termin - Datum und Uhrzeit - eröffnet die Moderatorin / der Moderator den virtuellen Raum für die Gedenk- oder Trauerfeier für alle eingeladenen Trauergäste.<br />
-                  Sie oder er begrüßt alle Trauergäste und beginnt die 30-minütige Gedenk- oder Trauerfeier mit Fotos, Musik und persönlichen Worten, ganz so, wie es mit den Angehörigen im Vorfeld genau besprochen wurde.<br />
-                  Über Rituale während der Feier bindet die Moderatorin / der Moderator alle Trauergäste ein. Individuelle Elemente schaffen einen emotionalen Raum für einen gemeinsam erlebten Abschied. Jeder kann, aber niemand muss etwas einbringen. Unsere erfahrenen Moderatoren führen professionell und kompetent durch die Zeremonie.
-                </AccordionItem>
-                <AccordionItem title="Welche technischen Voraussetzungen und Kenntnisse muss ich haben?">
-                  <b>Im Vorfeld</b><br />
-                  Alle Trauergäste bekommen per E-Mail eine persönliche Einladung mit den nötigen Zugangsdaten für den Online-Konferenzraum.<br />
-                  Der virtuelle Raum für die Online-Gedenk- oder Trauerfeier kann über einen Computer, ein Tablet oder ein Smartphone genutzt werden.<br />
-                  Das Gerät sollte über eine mittelmäßige bis gute Kamera verfügen. Für ein gutes Bild wäre es sinnvoll, wenn das Gerät während der Feier fest steht oder liegt, damit wacklige Bilder vermieden werden.<br />
-                  Außerdem sorgt ein Headset mit Mikrofonfunktion meist für eine bessere Tonqualität.<br />
-                  Alle Gäste sollten wenigstens 15 Minuten vor Beginn der Online-Trauerfeier im Online-„Warteraum“ sein, um die Internetverbindung sowie Ton- und Bildqualität zu testen. Wenn Sie dafür technische Unterstützung wünschen, buchen Sie diesen Service für sich und Ihre Trauergäste.
-                </AccordionItem>
-                <AccordionItem title="Was ist ein Online Trauercafé?">
-                  Während die Zeremonie einem festen Ablauf folgt und damit einen verbindlicheren Charakter hat, ist das 30-minütige „Trauercafé“ für den lockeren Austausch von Gedanken, Erinnerungen, Bildern gedacht. So kann eine Unterhaltung entstehen: Es können Anekdoten erzählt werden, und natürlich können die Trauergäste gemeinsam singen und musizieren. Hier moderiert der Moderator zurückhaltend und stellt vor allem ein gutes Gesprächsklima her.<br />
-                  Spontane Entwicklungen sind erwünscht, und ggf. kann die Dauer auch verlängert werden.
-                </AccordionItem>
-                <AccordionItem title="Brauche ich einen Bestatter?">
-                  <b>Nein</b>, Sie brauchen keinen Bestatter.<br />
-                  Für eine Online-Gedenkfeier benötigen Sie keinen Bestatter. Wenn Sie eine Online-Trauerfeier wünschen, dann setzen wir uns mit Ihrem Bestatter in Verbindung und besprechen die nötigen Einzelheiten. Gern vermitteln wir Sie an Bestatter aus unserem umfassenden Netzwerk, die Ihre Wünsche unterstützen. Fragen Sie uns für alle Leistungen an.
-                </AccordionItem>
-                <AccordionItem title="Kann ich die Gedenkseite danach weiter nutzen?">
-                  Ihnen steht die Gedenkseite kostenlos zur Verfügung, solange, bis Sie diese kündigen. Sie können den persönlichen Zugang zum größten und wichtigsten Gedenkportal kostenlos schon vor der Buchung bekommen und die Gedenkseite einrichten. Viele Funktionen stehen Ihnen hier zur Verfügung: Bilder, Videos, Kondolenzbuch, Gedenkkerzen, kleine Trauergeschenke und viel Platz für Ihre persönlichen Erinnerungen.
-                </AccordionItem>
+                {faq.map(item =>
+                  <AccordionItem
+                    key={item.question}
+                    title={item.question}
+                    htmlAnswer={{ __html: item.answer}}
+                    active={item.isActive}
+                  />
+                )}
               </Accordion>
             </div>
           </GenericSection>

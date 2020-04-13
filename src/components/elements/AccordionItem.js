@@ -42,6 +42,7 @@ class AccordionItem extends React.Component {
       children,
       active,
       title,
+      htmlAnswer,
       ...props
     } = this.props;
 
@@ -66,7 +67,7 @@ class AccordionItem extends React.Component {
           ref={this.content}
           className="accordion-content text-xs"
         >
-          <p>
+          <p dangerouslySetInnerHTML={htmlAnswer}>
             {children}
           </p>
         </div>
