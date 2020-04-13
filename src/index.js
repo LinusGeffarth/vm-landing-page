@@ -2,7 +2,6 @@ import React from 'react';
 import { render } from 'react-snapshot';
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import isBot from './utils/isBot';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -11,10 +10,6 @@ import * as serviceWorker from './serviceWorker';
 import './assets/scss/style.scss';
 
 const history = createBrowserHistory();
-
-if (!isBot()) {
-  document.body.classList.add('has-animations');
-}
 
 render(
   <Router history={history}>

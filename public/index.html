@@ -48,6 +48,12 @@
 
 <body>
     <div id="root" class="body-wrap"></div>
+
+    <script>
+      if (!/bot|googlebot|crawler|spider|robot|crawling|prerender/i.test(navigator.userAgent)) {
+        document.body.classList.add('has-animations');
+      }
+    </script>
 </body>
 
 </html>
