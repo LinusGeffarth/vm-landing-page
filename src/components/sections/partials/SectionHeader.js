@@ -31,12 +31,12 @@ class SectionHeader extends React.Component {
     const classes = classNames(
       'section-header',
       className
-    );    
+    );
 
     const Component = tag;
 
     return (
-      <React.Fragment>
+      <>
         {(data.title || data.paragraph) &&
           <div
             {...props}
@@ -57,7 +57,7 @@ class SectionHeader extends React.Component {
             </div>
           </div>
         }
-      </React.Fragment>
+      </>
     );
   }
 }

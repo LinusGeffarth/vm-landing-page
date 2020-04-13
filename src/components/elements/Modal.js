@@ -73,7 +73,7 @@ class Modal extends React.Component {
     );
 
     return (
-      <React.Fragment>
+      <>
         {show &&
           <div
             {...props}
@@ -97,7 +97,7 @@ class Modal extends React.Component {
                     ></video>
                   }
                 </div> :
-                <React.Fragment>
+                <>
                   {!closeHidden &&
                     <button
                       className="modal-close"
@@ -108,12 +108,12 @@ class Modal extends React.Component {
                   <div className="modal-content">
                     {children}
                   </div>
-                </React.Fragment>
+                </>
               }
             </div>
           </div>
         }
-      </React.Fragment>
+      </>
     )
   }
 }

@@ -109,7 +109,7 @@ class Carousel extends React.Component {
     );
 
     return (
-      <React.Fragment>
+      <>
         <div
           {...props}
           ref={this.carousel}
@@ -141,7 +141,7 @@ class Carousel extends React.Component {
             </button>
           ))}
         </div>
-      </React.Fragment>
+      </>
     )
   }
 }

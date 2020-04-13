@@ -96,7 +96,7 @@ class Header extends React.Component {
             )}>
             <Logo className="reveal-from-left" appearance="dark" size={120} style={{ marginTop: -10 }} />
             {!hideNav &&
-              <React.Fragment>
+              <>
                 <button
                   ref={this.hamburger}
                   className="header-nav-toggle"
@@ -145,7 +145,7 @@ class Header extends React.Component {
                       </ul>}
                   </div>
                 </nav>
-              </React.Fragment>}
+              </>}
           </div>
         </div>
       </header>
