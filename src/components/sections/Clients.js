@@ -59,7 +59,7 @@ class Clients extends React.Component {
           >
             <ul className="list-reset">
               {logos.map((logo, index) =>
-                <li className="reveal-rotate-from-left" data-reveal-delay={index * 150}>
+                <li className="reveal-rotate-from-left" data-reveal-delay={index * 150} key={index}>
                   <a href={logo.url} target="_blank" rel="noopener noreferrer">
                     <Image
                       className="clients-logo"

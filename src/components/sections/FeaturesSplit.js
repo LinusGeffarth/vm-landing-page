@@ -92,7 +92,7 @@ class FeaturesSplit extends React.Component {
             <div className={splitClasses}>
 
               {items.map((item, i) =>
-                <div className="split-item">
+                <div className="split-item" key={i}>
                   <div className="split-item-content center-content-mobile">
                     <h3 className="mt-0 mb-16 reveal-from-left" data-reveal-container=".split-item">
                       {item.title}

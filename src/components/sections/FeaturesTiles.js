@@ -93,8 +93,8 @@ class FeaturesTiles extends React.Component {
             <SectionHeader data={sectionHeader} className="center-content" />
             <div className={tilesClasses}>
 
-            {items.map((item) =>
-              <div className="tiles-item">
+            {items.map((item, i) =>
+              <div className="tiles-item" key={i}>
                 <div className="tiles-item-inner">
                   <div className="features-tiles-item-header">
                     <div className="mb-24 reveal-scale-up" data-reveal-container=".tiles-item">
