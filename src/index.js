@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-snapshot';
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import isBot from './utils/isBot';
@@ -16,7 +16,7 @@ if (isBot()) {
   document.body.classList.remove('has-animations');
 }
 
-ReactDOM.render(
+render(
   <Router history={history}>
     <App />
   </Router>,

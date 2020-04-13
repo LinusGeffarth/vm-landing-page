@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp build/index.html build/404.html",
+    "build": "react-scripts build && react-snapshot && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -39,6 +39,22 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "react-snapshot": "^1.3.0"
+  },
+  "reactSnapshot": {
+    "include": [
+      "/",
+      "/more-info",
+      "/press",
+      "/forms/choose-a-moderator",
+      "/forms/about-the-ceremony",
+      "/forms/guest-list",
+      "/imprint",
+      "/terms",
+      "/privacy"
+    ],
+    "exclude": [],
+    "snapshotDelay": 50
   }
 }
