@@ -54,6 +54,12 @@ class HeroSplit extends React.Component {
       alignTop && 'align-top'
     );
 
+    let title = 'Abschiednehmen mit trauerfeier.online';
+    const source = (new URLSearchParams(window.location.search)).get("utm_source");
+    if (/gedenkseiten/i.test(source)) {
+      title = 'Online-Gedenkfeiern trotz COVID19';
+    }
+
     return (
       <section
         {...props}
@@ -65,7 +71,7 @@ class HeroSplit extends React.Component {
               <div className="split-item">
                 <div className="hero-content split-item-content center-content-mobile">
                   <h1 className="mt-0 mb-12 reveal-from-left" data-reveal-delay="150">
-                    Abschiednehmen trotz COVID19
+                    {title}
                   </h1>
                   <p className="mt-0 mb-24 reveal-from-left" data-reveal-delay="300">
                     Mit der Online-Gedenkfeier eröffnen wir Ihnen und Ihren Angehörigen die Möglichkeit, zusammen zu sein und einander zu stützen: per Video – professionell moderiert.
