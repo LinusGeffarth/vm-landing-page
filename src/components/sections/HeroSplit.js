@@ -4,6 +4,7 @@ import { SectionSplitProps } from '../../utils/SectionProps';
 import Image from '../elements/Image';
 import { Link } from 'react-router-dom';
 import HashLink from '../elements/HashLink';
+import { URLSearchParams } from 'url';
 
 const propTypes = {
   ...SectionSplitProps.types
