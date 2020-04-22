@@ -95,7 +95,6 @@ class Secondary extends React.Component {
       question: 'Kann ich die Gedenkseite danach weiter nutzen?',
       answer: `Ihnen steht die Gedenkseite kostenlos zur Verfügung, solange, bis Sie diese kündigen. Sie können den persönlichen Zugang zum größten und wichtigsten Gedenkportal kostenlos schon vor der Buchung bekommen und die Gedenkseite einrichten. Viele Funktionen stehen Ihnen hier zur Verfügung: Bilder, Videos, Kondolenzbuch, Gedenkkerzen, kleine Trauergeschenke und viel Platz für Ihre persönlichen Erinnerungen.`
     }];
-console.log(window.location.href);
 
     return (
       <>

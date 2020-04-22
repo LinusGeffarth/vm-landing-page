@@ -75,7 +75,7 @@ class FeaturesSplit extends React.Component {
       subtitle: 'Sie sind auch nach der Online-Gedenkfeier nicht allein',
       text: 'Nach der Online-Gedenkfeier beisammen sein, sich austauschen und einander stützen: Das ist für viele Trauergäste sehr wichtig, und im Online-Trauercafé haben Sie dazu die Gelegenheit. Ihr Moderator aus der Online-Gedenkfeier begleitet Sie beim Austausch von Gedanken und Erinnerungen.'
     }, {
-      image: 'sharing-links',
+      image: 'documented-ceremony',
       title: 'Dokumentation der Gedenkfeier',
       subtitle: 'Wie wir Gedanken, Trost und Anteilnahme für Sie festhalten ',
       text: 'Ein Abschied ist ein einmaliger Moment. Doch nehmen die meisten Menschen diesen Moment nur benommen wahr. Aus diesem Grund sind im Nachhinein die Anteilnahme, die tröstenden Gedanken der anderen Trauergäste und das Teilen des Verlusts sehr wichtig. Um Ihnen das zu ermöglichen, bieten wir Ihnen die Aufnahmen der Online-Gedenkfeier als Audio- und Video-Datei an, die Sie im Nachgang als Download-Link erhalten.'

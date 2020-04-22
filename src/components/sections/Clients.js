@@ -44,7 +44,7 @@ class Clients extends React.Component {
       { image: 'omilia', name: 'Omilia', url: 'https://omilia.de', width: 80, height: 20 },
       { image: 'gedenkseiten', name: 'Gedenkseiten.de', url: 'https://gedenkseiten.de', width: 180, height: 30 },
       { image: 'convela', name: 'CONVELA', url: 'https://convela.de', width: 170, height: 30 },
-      { image: 'asv', name: 'ASV Deutschland', url: 'https://asv-deutschland.de', width: 120, height: 40 },
+      { image: 'funeral_marketplace', name: 'Funeral Marketplace', url: 'https://funeral-market.place', width: 150, height: 40 },
       { image: 'art_funeral', name: 'Art Funeral Italy', url: 'https://app.funeral-market.place/vendor/350/caveau', width: 160, height: 40 }
     ];
 
